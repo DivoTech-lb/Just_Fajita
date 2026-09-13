@@ -345,7 +345,7 @@
             "description_en": "Fries - 1 Coleslaw - 1 Cocktail sauce - 1 Garlic sauce - Pickles",
             "description_ar": "بطاطا مقلية - ١ كولسلو - ١ صلصة كوكتيل - ١ صلصة ثوم - كبيس",
             "price_lbp": 700000,
-            "photo": ""
+            "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/0f259429-c85e-4ae9-b8ad-e1ad45fc107a-IMG_9502.jpeg"
           },
           {
             "name_en": "Crispy 5 pcs",
@@ -353,7 +353,7 @@
             "description_en": "Fries - 1 Coleslaw - 1 Cocktail sauce - 2 Garlic sauce - Pickles",
             "description_ar": "بطاطا مقلية - ١ كولسلو - ١ صلصة كوكتيل - ٢ صلصة ثوم - كبيس",
             "price_lbp": 900000,
-            "photo": ""
+            "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/18f439ab-e1ee-4591-b0d2-06deda6df09c-IMG_9503.jpeg"
           },
           {
             "name_en": "Crispy 10 pcs",
@@ -361,7 +361,7 @@
             "description_en": "Fries - 2 Coleslaw - 2 Cocktail sauce - 4 Garlic sauce - Pickles",
             "description_ar": "بطاطا مقلية - ٢ كولسلو - ٢ صلصة كوكتيل - ٤ صلصة ثوم - كبيس",
             "price_lbp": 1750000,
-            "photo": ""
+            "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/71db12e6-14e4-4ba3-826e-338f379b20df-IMG_9505.jpeg"
           },
           {
             "name_en": "Escalope",
