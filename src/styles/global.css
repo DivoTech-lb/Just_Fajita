@@ -3,6 +3,7 @@
    green #89C642 · grey #808186 · teal #1B3C41 · cream #F7EBCF
    ============================================================ */
 
+
 :root {
   --green: #89C642;
   --green-ink: #52801F;       /* readable green on light backgrounds */
@@ -14,7 +15,13 @@
   --paper: #FFFFFF;
   --rule: #E6DCC4;
   --rule-dark: rgba(247, 235, 207, 0.18);
-
+  --jf-green-100:#E7F2D4;
+  --jf-green-400:#9CCC5B;
+  --jf-green-500:#8CC541;   /* logo green */
+  --jf-green-600:#74A831;
+  --jf-green-700:#5C8626;
+  --jf-green-800:#45651C;
+  --jf-ease:cubic-bezier(.3,.7,.4,1);
   --wrap: 940px;
   --bar-h: 46px;
   --rail-h: 52px;
@@ -27,6 +34,7 @@
   --font-display: "Bricolage Grotesque", "IBM Plex Sans Arabic", system-ui, sans-serif;
   --font-body: "IBM Plex Sans Arabic", system-ui, -apple-system, sans-serif;
 }
+
 
 *, *::before, *::after { box-sizing: border-box; }
 

@@ -37,10 +37,11 @@ if (offers?.items?.length) {
 <style>
   .rail {
     position: sticky; top: var(--bar-h); z-index: 30;
-    background: var(--green);
+        background:var(--paper);
     border-bottom: 1px solid var(--rule);
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   }
-  .rail__row { display: flex; align-items: center; }
+  .rail__row { display: flex; align-items: center;  }
   .rail__row--main { height: var(--rail-h); }
   .rail__row--extra {
     height: var(--rail2-h);
@@ -71,11 +72,11 @@ if (offers?.items?.length) {
     
   }
   .pill[aria-current="true"] {
-    background: #9a9696;
+    background: var(--green);
     color:var(--paper);
-
+  border:0px #FFFF solid;
     border-radius: 999px;
-    border: 2px solid var(--grey);
+
   }
 
   /* sweets and deals read as a different kind of thing */

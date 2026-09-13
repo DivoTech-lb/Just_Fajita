@@ -7,6 +7,7 @@ const chatHref = first ? `https://wa.me/${digits(first.number)}` : null;
 ---
 
 <div class="promo-bar">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
   <div class="wrap promo-bar__inner">
     <p class="promo-bar__text">{promotion}</p>
     {chatHref && (
@@ -19,12 +20,20 @@ const chatHref = first ? `https://wa.me/${digits(first.number)}` : null;
 </div>
 
 <style>
+@import url('https://googleapis.com');
   .promo-bar {
     position: sticky; top: 0; z-index: 40;
-    background: var(--green);
+  
     min-height: var(--bar-h);
     display: flex; align-items: center;
-   
+    background:linear-gradient(135deg,
+              var(--jf-green-700) 0%,
+              var(--jf-green-600) 55%,
+              var(--jf-green-500) 130%);
+
+
+  border-bottom:3px solid var(--jf-green-400);
+  box-shadow:0 4px 14px rgba(28,43,12,.12);
 
   }
   .promo-bar__inner {
@@ -33,12 +42,12 @@ const chatHref = first ? `https://wa.me/${digits(first.number)}` : null;
   }
   .promo-bar__text {
     margin: 0;
-    font-family:  'Playfair Display', Georgia, serif;
+    font-family: "Baloo 2",   sans-serif;;
     font-weight: 700;
     font-size: clamp(1.2rem, 1.4vw + 0.6rem, 12.05rem);
     letter-spacing: -0.01em;
   
-    color: #3a3939;
+    color: var(--paper);
   }
   .chat-btn {
     flex: none;
