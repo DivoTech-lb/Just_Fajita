@@ -108,7 +108,9 @@
             "price_lbp": 590000,
             "photo": ""
           }
-        ]
+        ],
+        "note_en": "hello",
+        "note_ar": "test 1 "
       },
       {
         "id": "sandwiches",
