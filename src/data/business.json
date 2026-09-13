@@ -317,16 +317,16 @@
           {
             "name_en": "Chicken Salad",
             "name_ar": "سلطة دجاج",
-            "description_en": "",
-            "description_ar": "",
+            "description_en": "Iceberg - Tomato - Cucumber - Corn - Shredded carrot - Chicken breast - Mozzarella",
+            "description_ar": "خس آيسبرغ - طماطم - خيار - ذرة - جزر مبشور - صدر دجاج - جبنة موزاريلا",
             "price_lbp": 650000,
             "photo": ""
           },
           {
             "name_en": "Season Salad",
             "name_ar": "سلطة الموسم",
-            "description_en": "",
-            "description_ar": "",
+            "description_en": "Iceberg - Cucumber - Tomato - Corn - Shredded carrot",
+            "description_ar": "خس آيسبرغ - خيار - طماطم - ذرة - جزر مبشور",
             "price_lbp": 400000,
             "photo": ""
           }
