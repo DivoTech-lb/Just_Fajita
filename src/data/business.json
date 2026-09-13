@@ -1,12 +1,696 @@
 {
-  "name": "Your Business Name",
-  "tagline": "A short tagline goes here",
-  "sections": [
-    {
-      "title": "Section one",
-      "items": [
-        { "name": "Item name", "description": "Item description", "price": 0 }
-      ]
+  "promotion": "Welcome to Just Fajita",
+  "brand": {
+    "name": "Just Fajita",
+    "tagline_en": "Good Food good Mood!",
+    "currency_label": "L.L."
+  },
+  "menu": {
+    "categories": [
+      {
+        "id": "burger-zinger",
+        "category_en": "Burger & Zinger",
+        "category_ar": "برغر وزنجر",
+        "items": [
+          {
+            "name_en": "Zinger",
+            "name_ar": "زنغر",
+            "description_en": "Cocktail sauce - Cheddar cheese - Lettuce - Tomato - Sweet corn - Jalapeño",
+            "description_ar": "صلصة كوكتيل - جبنة شيدر - خس - طماطم - ذرة حلوة - هالبينو",
+            "price_lbp": 500000,
+            "photo": ""
+          },
+          {
+            "name_en": "Zinger 112",
+            "name_ar": "زنغر ١١٢",
+            "description_en": "Cocktail sauce - Honey mustard - Mozzarella patty - Cheddar cheese - Lettuce - Tomato - Sweet corn - Jalapeño",
+            "description_ar": "صلصة كوكتيل - صلصة خردل بالعسل - شريحة موزاريلا - جبنة شيدر - خس - طماطم - ذرة حلوة - هالبينو",
+            "price_lbp": 750000,
+            "photo": ""
+          },
+          {
+            "name_en": "Zinger Supreme",
+            "name_ar": "زنغر سوبريم",
+            "description_en": "Cocktail sauce - BBQ - Smoked turkey - Cheddar cheese - Lettuce - Tomato - Sweet corn - Jalapeño",
+            "description_ar": "صلصة كوكتيل - باربيكيو - حبش مدخن - جبنة شيدر - خس - طماطم - ذرة حلوة - هالبينو",
+            "price_lbp": 590000,
+            "photo": ""
+          },
+          {
+            "name_en": "Lebanese Burger",
+            "name_ar": "برغر لبناني",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 580000,
+            "photo": ""
+          },
+          {
+            "name_en": "Cheese Burger",
+            "name_ar": "تشيز برغر",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 630000,
+            "photo": ""
+          },
+          {
+            "name_en": "American",
+            "name_ar": "أميريكان",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 630000,
+            "photo": ""
+          },
+          {
+            "name_en": "Mozzarella Chicken",
+            "name_ar": "موزاريلا دجاج",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 720000,
+            "photo": ""
+          },
+          {
+            "name_en": "Mozzarella Beef",
+            "name_ar": "موزاريلا لحمة",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 770000,
+            "photo": ""
+          },
+          {
+            "name_en": "Chicken Breast",
+            "name_ar": "صدر دجاج",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 640000,
+            "photo": ""
+          },
+          {
+            "name_en": "Chicken Breaded",
+            "name_ar": "دجاج مقرمش",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 610000,
+            "photo": ""
+          },
+          {
+            "name_en": "Escalop Burger",
+            "name_ar": "برغر اسكالوب",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 550000,
+            "photo": ""
+          },
+          {
+            "name_en": "Chicken Burger",
+            "name_ar": "برغر دجاج",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 590000,
+            "photo": ""
+          }
+        ]
+      },
+      {
+        "id": "sandwiches",
+        "category_en": "Sandwiches",
+        "category_ar": "سندويشات",
+        "items": [
+          {
+            "name_en": "Fahita",
+            "name_ar": "فاهيتا",
+            "description_en": "Fajita sauce - Avocado sauce - Soy sauce - Mozzarella cheese - Onion - Green pepper - Sweet corn",
+            "description_ar": "صلصة فاهيتا - صلصة أفوكادو - صلصة صويا - جبنة موزاريلا - بصل - فلفل أخضر - ذرة حلوة",
+            "price_lbp": 540000,
+            "photo": ""
+          },
+          {
+            "name_en": "Steack",
+            "name_ar": "سندويش لحمة",
+            "description_en": "Steak sauce - Cooked whipped cream - Soy sauce - Mozzarella cheese - Mushroom - Mayonnaise - Sweet corn - Pickles - Lettuce",
+            "description_ar": "صلصة ستيك - كريمة مخفوقة مطبوخة - صلصة صويا - جبنة موزاريلا - فطر - مايونيز - ذرة حلوة - كبيس - خس",
+            "price_lbp": 750000,
+            "photo": ""
+          },
+          {
+            "name_en": "Philadelphia",
+            "name_ar": "فيلادلفيا",
+            "description_en": "Steak sauce - Cooked whipped cream - Soy sauce - Mozzarella cheese - Mushroom - Mayonnaise - Sweet corn - Onion - Lettuce - Green pepper",
+            "description_ar": "صلصة ستيك - كريمة مخفوقة مطبوخة - صلصة صويا - جبنة موزاريلا - فطر - مايونيز - ذرة حلوة - بصل - خس - فلفل أخضر",
+            "price_lbp": 750000,
+            "photo": ""
+          },
+          {
+            "name_en": "Chicken Sub",
+            "name_ar": "تشيكن ساب",
+            "description_en": "Mayonnaise - Soy sauce - Mozzarella cheese - Sweet corn - Lettuce - Pickles",
+            "description_ar": "مايونيز - صلصة صويا - جبنة موزاريلا - ذرة حلوة - خس - كبيس",
+            "price_lbp": 450000,
+            "photo": ""
+          },
+          {
+            "name_en": "Mexican",
+            "name_ar": "مكسيكان",
+            "description_en": "Mayonnaise - Buffalo sauce - Mozzarella cheese - Sweet corn - Lettuce - Jalapeño",
+            "description_ar": "مايونيز - صلصة بافالو - جبنة موزاريلا - ذرة حلوة - خس - هالبينو",
+            "price_lbp": 500000,
+            "photo": "",
+            "spicy": true
+          },
+          {
+            "name_en": "Francisco",
+            "name_ar": "فرانسيسكو",
+            "description_en": "Mayonnaise - Soy sauce - Mozzarella cheese - Sweet corn - Lettuce - Pickles",
+            "description_ar": "مايونيز - صلصة صويا - جبنة موزاريلا - ذرة حلوة - خس - كبيس",
+            "price_lbp": 450000,
+            "photo": ""
+          },
+          {
+            "name_en": "Escalop",
+            "name_ar": "اسكالوب",
+            "description_en": "Garlic sauce - Coleslaw - Pickles - Potato - Ketchup",
+            "description_ar": "صلصة ثوم - كولسلو - كبيس - بطاطا - كاتشب",
+            "price_lbp": 500000,
+            "photo": ""
+          },
+          {
+            "name_en": "Tawook",
+            "name_ar": "طاووق",
+            "description_en": "Garlic sauce - Coleslaw - Pickles - Potato",
+            "description_ar": "صلصة ثوم - كولسلو - كبيس - بطاطا",
+            "price_lbp": 430000,
+            "photo": ""
+          },
+          {
+            "name_en": "Crispy",
+            "name_ar": "كرسبي",
+            "description_en": "Garlic sauce - Coleslaw - Pickles - Potato - Ketchup",
+            "description_ar": "صلصة ثوم - كولسلو - كبيس - بطاطا - كاتشب",
+            "price_lbp": 430000,
+            "photo": ""
+          },
+          {
+            "name_en": "Italian Chicken",
+            "name_ar": "إيطاليان تشيكن",
+            "description_en": "Mozzarella cheese - Honey mustard sauce - BBQ sauce - Smoked turkey - Lettuce - Sweet corn",
+            "description_ar": "جبنة موزاريلا - صلصة خردل بالعسل - صلصة باربيكيو - حبش مدخن - خس - ذرة حلوة",
+            "price_lbp": 540000,
+            "photo": ""
+          },
+          {
+            "name_en": "Honey Mustard Chicken",
+            "name_ar": "هني مسترد تشيكن",
+            "description_en": "Chicken breast - Sweet corn - Lettuce - Honey mustard sauce - Cheddar cheese - Chips",
+            "description_ar": "صدر دجاج - ذرة حلوة - خس - صلصة خردل بالعسل - جبنة شيدر - شيبس",
+            "price_lbp": 520000,
+            "photo": ""
+          },
+          {
+            "name_en": "Crust Chicken",
+            "name_ar": "كرست تشيكن",
+            "description_en": "Chicken breast - Sweet corn - Lettuce - Mozzarella - Caesar sauce - Chips",
+            "description_ar": "صدر دجاج - ذرة حلوة - خس - موزاريلا - صلصة سيزر - شيبس",
+            "price_lbp": 520000,
+            "photo": ""
+          },
+          {
+            "name_en": "Habash & Cheese",
+            "name_ar": "حبش مدخن وجبنة",
+            "description_en": "Mayonnaise - Pickles - Tomato - Mustard - Sweet corn - Iceberg",
+            "description_ar": "مايونيز - كبيس - طماطم - خردل - ذرة حلوة - خس",
+            "price_lbp": 410000,
+            "photo": ""
+          },
+          {
+            "name_en": "Sandwich Potato",
+            "name_ar": "ساندويش بطاطا",
+            "description_en": "Garlic sauce - Coleslaw - Pickles - Ketchup",
+            "description_ar": "صلصة ثوم - كولسلو - كبيس - كاتشب",
+            "price_lbp": 250000,
+            "photo": ""
+          }
+        ]
+      },
+      {
+        "id": "appetizers",
+        "category_en": "Appetizers",
+        "category_ar": "مقبلات",
+        "items": [
+          {
+            "name_en": "Fries Small",
+            "name_ar": "بطاطا صغيرة",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 300000,
+            "photo": ""
+          },
+          {
+            "name_en": "Fries Large",
+            "name_ar": "بطاطا كبيرة",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 450000,
+            "photo": ""
+          },
+          {
+            "name_en": "Wedges",
+            "name_ar": "ودجز",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 400000,
+            "photo": ""
+          },
+          {
+            "name_en": "Curly Fries",
+            "name_ar": "كيرلي فرايز",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 500000,
+            "photo": ""
+          },
+          {
+            "name_en": "Mozzarella Sticks",
+            "name_ar": "أصابع موزاريلا",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 450000,
+            "photo": ""
+          },
+          {
+            "name_en": "Cheddar Balls",
+            "name_ar": "كرات شيدر",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 450000,
+            "photo": ""
+          },
+          {
+            "name_en": "Crazy Chicken",
+            "name_ar": "كريزي تشيكن",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 730000,
+            "photo": ""
+          },
+          {
+            "name_en": "Fries & Cheese",
+            "name_ar": "بطاطا مع جبنة",
+            "description_en": "Mozzarella & cheddar",
+            "description_ar": "موزاريلا وشيدر",
+            "price_lbp": 600000,
+            "photo": ""
+          }
+        ]
+      },
+      {
+        "id": "salad",
+        "category_en": "Salad",
+        "category_ar": "سلطة",
+        "items": [
+          {
+            "name_en": "Chicken Ceaser",
+            "name_ar": "تشيكن سيزر",
+            "description_en": "Chicken breast - Lettuce - Sweet corn - Toast - Parmesan cheese, served with Caesar sauce",
+            "description_ar": "صدر دجاج - خس - ذرة حلوة - توست - جبنة بارميزان تقدّم مع صلصة سيزر",
+            "price_lbp": 700000,
+            "photo": ""
+          },
+          {
+            "name_en": "Chicken Salad",
+            "name_ar": "سلطة دجاج",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 650000,
+            "photo": ""
+          },
+          {
+            "name_en": "Season Salad",
+            "name_ar": "سلطة الموسم",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 400000,
+            "photo": ""
+          }
+        ]
+      },
+      {
+        "id": "plate",
+        "category_en": "Plate",
+        "category_ar": "صحون",
+        "items": [
+          {
+            "name_en": "Crispy 3 pcs",
+            "name_ar": "وجبة كرسبي ٣ قطع",
+            "description_en": "Fries - 1 Coleslaw - 1 Cocktail sauce - 1 Garlic sauce - Pickles",
+            "description_ar": "بطاطا مقلية - ١ كولسلو - ١ صلصة كوكتيل - ١ صلصة ثوم - كبيس",
+            "price_lbp": 700000,
+            "photo": ""
+          },
+          {
+            "name_en": "Crispy 5 pcs",
+            "name_ar": "وجبة كرسبي ٥ قطع",
+            "description_en": "Fries - 1 Coleslaw - 1 Cocktail sauce - 2 Garlic sauce - Pickles",
+            "description_ar": "بطاطا مقلية - ١ كولسلو - ١ صلصة كوكتيل - ٢ صلصة ثوم - كبيس",
+            "price_lbp": 900000,
+            "photo": ""
+          },
+          {
+            "name_en": "Crispy 10 pcs",
+            "name_ar": "وجبة كرسبي ١٠ قطع",
+            "description_en": "Fries - 2 Coleslaw - 2 Cocktail sauce - 4 Garlic sauce - Pickles",
+            "description_ar": "بطاطا مقلية - ٢ كولسلو - ٢ صلصة كوكتيل - ٤ صلصة ثوم - كبيس",
+            "price_lbp": 1750000,
+            "photo": ""
+          },
+          {
+            "name_en": "Escalope",
+            "name_ar": "اسكالوب",
+            "description_en": "2 pieces escalope - Fries - Coleslaw - Cocktail sauce - Garlic sauce - Pickles",
+            "description_ar": "قطعتان إسكالوب - بطاطا مقلية - كولسلو - صلصة كوكتيل - صلصة ثوم - كبيس",
+            "price_lbp": 900000,
+            "photo": ""
+          },
+          {
+            "name_en": "Escalopini",
+            "name_ar": "اسكالوبيني",
+            "description_en": "2 pieces escalope with mixed cheese (cheddar & mozzarella) - Wedges - Small Caesar salad - Honey mustard sauce",
+            "description_ar": "قطعتان إسكالوب مع مزيج جبنة (شيدر وموزاريلا) - ودجز - سلطة سيزر صغيرة - صلصة خردل بالعسل",
+            "price_lbp": 1090000,
+            "photo": ""
+          },
+          {
+            "name_en": "Mix Plate",
+            "name_ar": "صحن مشكل",
+            "description_en": "1 chicken breast - 1 crispy chicken - 1 escalope - Fries - Coleslaw - Cocktail sauce - Pickles",
+            "description_ar": "صدر دجاج قطعة - دجاج مقرمش قطعة - إسكالوب قطعة - بطاطا مقلية - كولسلو - صلصة كوكتيل - كبيس",
+            "price_lbp": 950000,
+            "photo": ""
+          },
+          {
+            "name_en": "Tawook",
+            "name_ar": "طاووق",
+            "description_en": "Tawook - Fries - Coleslaw - Cocktail sauce - Garlic sauce - Pickles",
+            "description_ar": "طاووق - بطاطا مقلية - كولسلو - صلصة كوكتيل - صلصة ثوم - كبيس",
+            "price_lbp": 950000,
+            "photo": ""
+          },
+          {
+            "name_en": "Original Chicken",
+            "name_ar": "صحن دجاج",
+            "description_en": "2 pieces chicken breast - Fries - Small green salad - Garlic sauce - Pickles",
+            "description_ar": "قطعتان صدر دجاج - بطاطا مقلية - سلطة خضراء صغيرة - صلصة ثوم - كبيس",
+            "price_lbp": 910000,
+            "photo": ""
+          },
+          {
+            "name_en": "Nuggets 8 pcs",
+            "name_ar": "ناغتس ٨ قطع",
+            "description_en": "8 pcs nuggets - Fries - 1 Garlic sauce - 2 Cocktail sauce - 1 Coleslaw",
+            "description_ar": "٨ حبات ناغتس - بطاطا مقلية - ١ صلصة ثوم - ٢ صلصة كوكتيل - ١ كولسلو",
+            "price_lbp": 700000,
+            "photo": ""
+          }
+        ]
+      },
+      {
+        "id": "wraps",
+        "category_en": "Wraps",
+        "category_ar": "راب",
+        "items": [
+          {
+            "name_en": "Boneless Chicken Wrap",
+            "name_ar": "راب دجاج بونليس",
+            "description_en": "Deep-fried breaded chicken breast with iceberg and chips sticks in a spread of mix sauce",
+            "description_ar": "صدر دجاج مقرمش مقلي مع خس آيسبرغ وشيبس وصلصة مشكلة",
+            "price_lbp": 650000,
+            "photo": ""
+          },
+          {
+            "name_en": "Escalop Chicken Wrap",
+            "name_ar": "راب اسكالوب دجاج",
+            "description_en": "Deep-fried breaded chicken strips with iceberg and chips sticks in a spread of honey mustard sauce",
+            "description_ar": "شرائح دجاج مقرمشة مقلية مع خس آيسبرغ وشيبس وصلصة خردل بالعسل",
+            "price_lbp": 630000,
+            "photo": ""
+          },
+          {
+            "name_en": "Fries Wrap",
+            "name_ar": "راب بطاطا",
+            "description_en": "French fries with iceberg and our boneless sauces",
+            "description_ar": "بطاطا مقلية مع خس آيسبرغ وصلصات البونليس",
+            "price_lbp": 400000,
+            "photo": ""
+          },
+          {
+            "name_en": "Mix Cheese Wrap",
+            "name_ar": "راب جبنة مشكلة",
+            "description_en": "Mozzarella sticks with melted cheddar, iceberg, chips sticks, ranch sauce and honey mustard sauce",
+            "description_ar": "أصابع موزاريلا مع شيدر ذائب وخس آيسبرغ وشيبس وصلصة رانش وصلصة خردل بالعسل",
+            "price_lbp": 520000,
+            "photo": ""
+          },
+          {
+            "name_en": "Buffalo Wrap",
+            "name_ar": "راب بافالو",
+            "description_en": "Crispy chicken dipped in buffalo sauce with iceberg, chips sticks, honey mustard and ranch",
+            "description_ar": "دجاج مقرمش بصلصة بافالو مع خس آيسبرغ وشيبس وصلصة خردل بالعسل ورانش",
+            "price_lbp": 650000,
+            "photo": "",
+            "spicy": true
+          },
+          {
+            "name_en": "Twister Wrap",
+            "name_ar": "راب تويستر",
+            "description_en": "Crispy tenders wrapped with cheddar slice, iceberg lettuce, tomato slices and special sauce",
+            "description_ar": "قطع دجاج مقرمشة مع شريحة شيدر وخس آيسبرغ وشرائح طماطم وصلصة خاصة",
+            "price_lbp": 650000,
+            "photo": ""
+          },
+          {
+            "name_en": "Special Wrap",
+            "name_ar": "راب سبيشل",
+            "description_en": "Crispy tenders wrapped with mozzarella sticks, iceberg, melted cheddar and special sauce",
+            "description_ar": "قطع دجاج مقرمشة مع أصابع موزاريلا وخس آيسبرغ وشيدر ذائب وصلصة خاصة",
+            "price_lbp": 680000,
+            "photo": ""
+          }
+        ]
+      },
+      {
+        "id": "crepe",
+        "category_en": "Crepe",
+        "category_ar": "كريب",
+        "secondary": true,
+        "note_en": "Sweet moments always a good idea",
+        "note_ar": "لحظات حلوة دائماً فكرة جيدة",
+        "items": [
+          {
+            "name_en": "Nutella Crepe",
+            "name_ar": "كريب نوتيلا",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 250000,
+            "photo": ""
+          },
+          {
+            "name_en": "Chocolate Crepe",
+            "name_ar": "كريب شوكولا",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 200000,
+            "photo": ""
+          },
+          {
+            "name_en": "White Chocolate Crepe",
+            "name_ar": "كريب شوكولا بيضاء",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 250000,
+            "photo": ""
+          },
+          {
+            "name_en": "Lotus Crepe",
+            "name_ar": "كريب لوتس",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 250000,
+            "photo": ""
+          },
+          {
+            "name_en": "White Chocolate & Nutella",
+            "name_ar": "شوكولا بيضاء ونوتيلا",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 250000,
+            "photo": ""
+          },
+          {
+            "name_en": "Kinder Crepe",
+            "name_ar": "كريب كيندر",
+            "description_en": "6 fingers",
+            "description_ar": "٦ أصابع",
+            "price_lbp": 400000,
+            "photo": ""
+          },
+          {
+            "name_en": "Fettuccine Crepe",
+            "name_ar": "كريب فيتوتشيني",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 300000,
+            "photo": ""
+          },
+          {
+            "name_en": "Pistachio Crepe",
+            "name_ar": "كريب فستق",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 350000,
+            "photo": ""
+          },
+          {
+            "name_en": "Oreo Crepe",
+            "name_ar": "كريب أوريو",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 350000,
+            "photo": ""
+          },
+          {
+            "name_en": "Nutella & Oreo",
+            "name_ar": "نوتيلا وأوريو",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 350000,
+            "photo": ""
+          },
+          {
+            "name_en": "Nutella & Brownie",
+            "name_ar": "نوتيلا وبراوني",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 350000,
+            "photo": ""
+          },
+          {
+            "name_en": "Nutella & KitKat",
+            "name_ar": "نوتيلا وكيت كات",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 350000,
+            "photo": ""
+          }
+        ]
+      }
+    ]
+  },
+  "offers": {
+    "id": "offers",
+    "title_en": "Offers",
+    "title_ar": "عروض",
+    "subtitle_en": "Sandwich + fries + Pepsi",
+    "subtitle_ar": "سندويش + بطاطا + بيبسي",
+    "rotate_ms": 3000,
+    "items": [
+      {
+        "name_en": "Zinger Offer",
+        "name_ar": "عرض زنغر",
+        "description_en": "Zinger + fries + Pepsi",
+        "description_ar": "زنغر + بطاطا + بيبسي",
+        "price_lbp": 800000,
+        "photo": ""
+      },
+      {
+        "name_en": "Fajita Offer",
+        "name_ar": "عرض فاهيتا",
+        "description_en": "Fajita + fries + Pepsi",
+        "description_ar": "فاهيتا + بطاطا + بيبسي",
+        "price_lbp": 800000,
+        "photo": "photo_5850513024102371254_x.jpg"
+      },
+      {
+        "name_en": "Chicken Sub Offer",
+        "name_ar": "عرض تشيكن ساب",
+        "description_en": "Chicken sub + fries + Pepsi",
+        "description_ar": "تشيكن ساب + بطاطا + بيبسي",
+        "price_lbp": 800000,
+        "photo": "photo_5850513024102371253_x.jpg"
+      },
+      {
+        "name_en": "Francisco Offer",
+        "name_ar": "عرض فرانسيسكو",
+        "description_en": "Francisco + fries + Pepsi",
+        "description_ar": "فرانسيسكو + بطاطا + بيبسي",
+        "price_lbp": 800000,
+        "photo": ""
+      },
+      {
+        "name_en": "Kamikaz Offer",
+        "name_ar": "عرض كاميكاز",
+        "description_en": "Kamikaz + fries + Pepsi",
+        "description_ar": "كاميكاز + بطاطا + بيبسي",
+        "price_lbp": 800000,
+        "photo": "photo_5850513024102371252_x.jpg"
+      }
+    ]
+  },
+  "business_info": {
+    "about_en": "Fresh ingredients, premium quality. Good food, good mood.",
+    "about_ar": "مكونات طازجة وجودة عالية. أكل طيب ومزاج حلو.",
+    "business_hours": [
+      {
+        "day_en": "Monday",
+        "day_ar": "الإثنين",
+        "hours": "12:00pm-1:00am"
+      },
+      {
+        "day_en": "Tuesday",
+        "day_ar": "الثلاثاء",
+        "hours": "12:00pm-1:00am"
+      },
+      {
+        "day_en": "Wednesday",
+        "day_ar": "الأربعاء",
+        "hours": "12:00pm-1:00am"
+      },
+      {
+        "day_en": "Thursday",
+        "day_ar": "الخميس",
+        "hours": "12:00pm-1:00am"
+      },
+      {
+        "day_en": "Friday",
+        "day_ar": "الجمعة",
+        "hours": "12:00pm-1:00am"
+      },
+      {
+        "day_en": "Saturday",
+        "day_ar": "السبت",
+        "hours": "12:00pm-1:00am"
+      },
+      {
+        "day_en": "Sunday",
+        "day_ar": "الأحد",
+        "hours": "12:00pm-1:00am"
+      }
+    ],
+    "location": {
+      "address": "PLACEHOLDER_ADDRESS",
+      "city": "Beirut",
+      "country": "Lebanon"
+    },
+    "google_maps_link": "https://www.google.com/maps/place/just+fajita/data=!4m2!3m1!1s0x151f19cbd8b9e45d:0xf39dc02b131474e8?sa=X&ved=1t:242&ictx=111",
+    "whatsapp": [
+      {
+        "label_en": "Delivery",
+        "label_ar": "توصيل",
+        "number": "+96171330202"
+      }
+    ],
+    "email": "justfajita.restaurant@gmail.com",
+    "social_media": {
+      "instagram": "https://instagram.com/just.fajita.rest",
+      "facebook": "https://facebook.com/just.fajita.rest",
+      "tiktok": "https://tiktok.com/just.fajita.rest"
     }
-  ]
-}
+  }
+}  

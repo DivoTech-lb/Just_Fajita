@@ -1,0 +1,57 @@
+---
+const { promotion, whatsapp = [] } = Astro.props;
+
+const digits = (n) => (n || '').replace(/[^\d]/g, '');
+const first = whatsapp.find((w) => digits(w.number).length >= 8);
+const chatHref = first ? `https://wa.me/${digits(first.number)}` : null;
+---
+
+<div class="promo-bar">
+  <div class="wrap promo-bar__inner">
+    <p class="promo-bar__text">{promotion}</p>
+    {chatHref && (
+      <a class="chat-btn" href={chatHref} target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1a12.4 12.4 0 0 1-4.6-2.9 9.3 9.3 0 0 1-2-3c-.2-.6 0-1.4.4-1.9.2-.2.4-.3.6-.3h.5c.2 0 .4 0 .6.4l.8 1.8c.1.2 0 .4-.1.5l-.3.4c-.1.2-.3.3-.1.6.5.9 1.1 1.6 1.9 2.2.4.3.8.5 1.2.7.2.1.4.1.5-.1l.7-.8c.2-.2.3-.2.6-.1l1.8.8c.3.1.4.3.4.5s0 .8-.1 1.1Z"/></svg>
+        <span>Chat</span>
+      </a>
+    )}
+  </div>
+</div>
+
+<style>
+  .promo-bar {
+    position: sticky; top: 0; z-index: 40;
+    background: var(--green);
+    min-height: var(--bar-h);
+    display: flex; align-items: center;
+   
+
+  }
+  .promo-bar__inner {
+    display: flex; align-items: center; justify-content: space-between; gap: 14px;
+    min-height: var(--bar-h);
+  }
+  .promo-bar__text {
+    margin: 0;
+    font-family:  'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    font-size: clamp(1.2rem, 1.4vw + 0.6rem, 12.05rem);
+    letter-spacing: -0.01em;
+  
+    color: #3a3939;
+  }
+  .chat-btn {
+    flex: none;
+    display: inline-flex; align-items: center; gap: 7px;
+    background: var(--paper); color: var(--teal);
+    text-decoration: none;
+    padding: 6px 14px 6px 11px;
+    border-radius: 999px;
+    font-weight: 600; font-size: 0.86rem;
+    transition: transform .15s ease, background-color .15s ease;
+  }
+  .chat-btn svg { width: 17px; height: 17px; fill: var(--green-ink); }
+  .chat-btn:hover { background: var(--cream-soft); transform: translateY(-1px); }
+
+
+</style>

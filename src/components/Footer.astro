@@ -1,0 +1,183 @@
+---
+import { LOGO } from '../assets.js';
+
+const { info = {}, brand = {} } = Astro.props;
+
+const filled = (v) => typeof v === 'string' && v.trim() !== '' && !v.startsWith('PLACEHOLDER');
+const digits = (n) => (n || '').replace(/[^\d]/g, '');
+
+const hours = info.business_hours ?? [];
+const loc = info.location ?? {};
+const address = [loc.address, loc.city, loc.country].filter(filled).join(', ');
+const maps = filled(info.google_maps_link) ? info.google_maps_link : null;
+const email = filled(info.email) ? info.email : null;
+
+/* Every contact row and social icon is always rendered so the footer looks
+   complete. An entry with no value yet shows a muted "not set" state and
+   turns into a real link the moment business.json is filled in. */
+const numbers = (info.whatsapp ?? []).map((w) => ({
+  label: w.label_en || 'WhatsApp',
+  number: w.number,
+  href: digits(w.number).length >= 8 ? `https://wa.me/${digits(w.number)}` : null,
+}));
+
+const social = info.social_media ?? {};
+const socials = [
+  { key: 'instagram', label: 'Instagram' },
+  { key: 'facebook', label: 'Facebook' },
+  { key: 'tiktok', label: 'TikTok' },
+].map((s) => ({ ...s, href: filled(social[s.key]) ? social[s.key] : null }));
+
+const order = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const today = order[new Date().getDay()];
+
+const ICONS = {
+  instagram: 'M12 2c2.7 0 3 0 4.1.1 1 0 1.7.2 2.3.4.6.3 1.1.6 1.6 1.1s.8 1 1.1 1.6c.2.6.4 1.3.4 2.3.1 1.1.1 1.4.1 4.1s0 3-.1 4.1c0 1-.2 1.7-.4 2.3-.3.6-.6 1.1-1.1 1.6s-1 .8-1.6 1.1c-.6.2-1.3.4-2.3.4-1.1.1-1.4.1-4.1.1s-3 0-4.1-.1c-1 0-1.7-.2-2.3-.4-.6-.3-1.1-.6-1.6-1.1s-.8-1-1.1-1.6c-.2-.6-.4-1.3-.4-2.3C2 15 2 14.7 2 12s0-3 .1-4.1c0-1 .2-1.7.4-2.3.3-.6.6-1.1 1.1-1.6s1-.8 1.6-1.1c.6-.2 1.3-.4 2.3-.4C8.6 2 8.9 2 12 2zm0 1.8c-2.7 0-3 0-4 .1-.8 0-1.2.2-1.5.3-.4.1-.7.3-1 .6s-.5.6-.6 1c-.1.3-.3.7-.3 1.5-.1 1-.1 1.3-.1 4s0 3 .1 4c0 .8.2 1.2.3 1.5.1.4.3.7.6 1s.6.5 1 .6c.3.1.7.3 1.5.3 1 .1 1.3.1 4 .1s3 0 4-.1c.8 0 1.2-.2 1.5-.3.4-.1.7-.3 1-.6s.5-.6.6-1c.1-.3.3-.7.3-1.5.1-1 .1-1.3.1-4s0-3-.1-4c0-.8-.2-1.2-.3-1.5-.1-.4-.3-.7-.6-1s-.6-.5-1-.6c-.3-.1-.7-.3-1.5-.3-1-.1-1.3-.1-4-.1zm0 3.1a5.1 5.1 0 1 1 0 10.2 5.1 5.1 0 0 1 0-10.2zm0 8.4a3.3 3.3 0 1 0 0-6.6 3.3 3.3 0 0 0 0 6.6zm6.5-8.6a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z',
+  facebook: 'M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z',
+  tiktok: 'M16.6 2h-3v13.3a2.4 2.4 0 1 1-1.9-2.3V9.8a5.6 5.6 0 1 0 4.9 5.5V8.6a6.6 6.6 0 0 0 3.9 1.3V6.7a3.7 3.7 0 0 1-3.9-3.6V2z',
+  pin: 'M12 2a7 7 0 0 0-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z',
+  phone: 'M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1a12.4 12.4 0 0 1-4.6-2.9 9.3 9.3 0 0 1-2-3c-.2-.6 0-1.4.4-1.9.2-.2.4-.3.6-.3h.5c.2 0 .4 0 .6.4l.8 1.8c.1.2 0 .4-.1.5l-.3.4c-.1.2-.3.3-.1.6.5.9 1.1 1.6 1.9 2.2.4.3.8.5 1.2.7.2.1.4.1.5-.1l.7-.8c.2-.2.3-.2.6-.1l1.8.8c.3.1.4.3.4.5s0 .8-.1 1.1Z',
+  mail: 'M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5v2.2z',
+};
+---
+
+<footer class="footer" id="contact">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <img class="footer__logo" src={LOGO} alt={brand.name} width="600" height="600" loading="lazy" />
+      {info.about_en && <p class="footer__about">{info.about_en}</p>}
+
+      <ul class="socials">
+        {socials.map((s) =>
+          s.href ? (
+            <li>
+              <a href={s.href} target="_blank" rel="noopener" aria-label={s.label}>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d={ICONS[s.key]} /></svg>
+              </a>
+            </li>
+          ) : (
+            <li>
+              <span class="is-empty" title={`${s.label} link not set yet`} aria-label={`${s.label} — coming soon`}>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d={ICONS[s.key]} /></svg>
+              </span>
+            </li>
+          )
+        )}
+      </ul>
+    </div>
+
+    {hours.length > 0 && (
+      <section class="footer__col">
+        <h3>Opening hours</h3>
+        <ul class="hours">
+          {hours.map((h) => (
+            <li class={h.day_en === today ? 'is-today' : ''}>
+              <span>{h.day_en}</span>
+              <span>{filled(h.hours) ? h.hours : 'Coming soon'}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    <section class="footer__col">
+      <h3>Find us</h3>
+      <address class="contact">
+        <div class="contact__row">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d={ICONS.pin} /></svg>
+          <div>
+            <span class="contact__label">Location</span>
+            {maps
+              ? <a href={maps} target="_blank" rel="noopener">{address || 'Open in Google Maps'}</a>
+              : address
+                ? <p>{address}</p>
+                : <p class="is-empty">Address coming soon</p>}
+          </div>
+        </div>
+
+        {numbers.map((w) => (
+          <div class="contact__row">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d={ICONS.phone} /></svg>
+            <div>
+              <span class="contact__label">{w.label}</span>
+              {w.href
+                ? <a href={w.href} target="_blank" rel="noopener">{w.number}</a>
+                : <p class="is-empty">Number coming soon</p>}
+            </div>
+          </div>
+        ))}
+
+        <div class="contact__row">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d={ICONS.mail} /></svg>
+          <div>
+            <span class="contact__label">Email</span>
+            {email
+              ? <a href={`mailto:${email}`}>{email}</a>
+              : <p class="is-empty">Email coming soon</p>}
+          </div>
+        </div>
+      </address>
+    </section>
+  </div>
+
+  <div class="wrap footer__base">
+    <p>© {new Date().getFullYear()} {brand.name}. All rights reserved.</p>
+  </div>
+</footer>
+
+<style>
+  .footer { background: var(--teal-deep); color: var(--cream); padding-top: 42px; }
+  .footer__inner { display: grid; gap: 34px; padding-bottom: 34px; }
+
+  .footer__logo { width: 96px; height: auto; }
+  .footer__about { margin: 14px 0 0; color: #C9C4B4; font-size: 0.9rem; max-width: 40ch; }
+
+  .footer__col h3 {
+    margin: 0 0 12px;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--green);
+    letter-spacing: -0.01em;
+  }
+
+  .hours li {
+    display: flex; justify-content: space-between; gap: 16px;
+    padding: 5px 0;
+    border-bottom: 1px solid var(--rule-dark);
+    font-size: 0.87rem;
+  }
+  .hours li span:last-child { color: #C9C4B4; }
+  .hours li.is-today,
+  .hours li.is-today span:last-child { color: var(--green); font-weight: 600; }
+
+  .contact { font-style: normal; display: grid; gap: 12px; }
+  .contact a, .contact p { margin: 0; color: #C9C4B4; text-decoration: none; font-size: 0.89rem; }
+  .contact a:hover { color: var(--green); }
+  .contact__row { display: flex; gap: 10px; align-items: flex-start; }
+  .contact__row svg { width: 17px; height: 17px; flex: none; margin-top: 3px; fill: var(--green); }
+  .contact__label { display: block; color: #7E8B87; font-size: 0.76rem; }
+
+  /* waiting on a real value in business.json */
+  .contact p.is-empty { color: #6C7A76; font-style: italic; }
+
+  .socials { display: flex; gap: 10px; margin-top: 18px; }
+  .socials a, .socials span {
+    width: 36px; height: 36px;
+    display: grid; place-items: center;
+    border-radius: 50%;
+    border: 1px solid var(--rule-dark);
+    transition: background-color .18s ease, border-color .18s ease;
+  }
+  .socials svg { width: 17px; height: 17px; fill: var(--cream); transition: fill .18s ease; }
+  .socials a:hover { background: var(--green); border-color: var(--green); }
+  .socials a:hover svg { fill: #123034; }
+  .socials .is-empty { opacity: .38; cursor: default; }
+
+  .footer__base { border-top: 1px solid var(--rule-dark); padding-block: 16px 22px; }
+  .footer__base p { margin: 0; font-size: 0.78rem; color: #7E8B87; }
+
+  @media (min-width: 700px) {
+    .footer__inner { grid-template-columns: 1.2fr 1fr 1fr; gap: 40px; }
+  }
+</style>

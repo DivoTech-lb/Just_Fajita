@@ -1,0 +1,74 @@
+/* ============================================================
+   Just Fajita — brand tokens and base layer
+   green #89C642 · grey #808186 · teal #1B3C41 · cream #F7EBCF
+   ============================================================ */
+
+:root {
+  --green: #89C642;
+  --green-ink: #52801F;       /* readable green on light backgrounds */
+  --grey: #808186;
+  --teal: #1B3C41;
+  --teal-deep: #142E32;
+  --cream: #FFFFFF;
+  --cream-soft: #FCF6E9;
+  --paper: #FFFFFF;
+  --rule: #E6DCC4;
+  --rule-dark: rgba(247, 235, 207, 0.18);
+
+  --wrap: 940px;
+  --bar-h: 46px;
+  --rail-h: 52px;
+  --rail2-h: 46px;
+
+  --r-md: 14px;
+  --r-lg: 22px;
+  --shadow: 0 10px 30px rgba(27, 60, 65, 0.10);
+
+  --font-display: "Bricolage Grotesque", "IBM Plex Sans Arabic", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans Arabic", system-ui, -apple-system, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  /* clears the promo bar + both nav rows */
+  scroll-padding-top: calc(var(--bar-h) + var(--rail-h) + var(--rail2-h) + 10px);
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--teal);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+ul { list-style: none; margin: 0; padding: 0; }
+a { color: inherit; }
+
+.wrap {
+  width: 100%;
+  max-width: var(--wrap);
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+.skip {
+  position: absolute; left: -9999px; top: 0; z-index: 100;
+  background: var(--teal); color: var(--cream); padding: 10px 16px;
+}
+.skip:focus { left: 0; }
+
+:focus-visible { outline: 3px solid var(--green); outline-offset: 3px; border-radius: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    transition-duration: .001ms !important;
+  }
+}

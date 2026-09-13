@@ -1,0 +1,150 @@
+---
+const { categories = [], offers } = Astro.props;
+
+const primary = categories
+  .filter((c) => !c.secondary)
+  .map((c) => ({ id: c.id, label: c.category_en }));
+
+const secondary = categories
+  .filter((c) => c.secondary)
+  .map((c) => ({ id: c.id, label: c.category_en }));
+
+if (offers?.items?.length) {
+  secondary.push({ id: offers.id || 'offers', label: offers.title_en || 'Offers' });
+}
+---
+
+<nav class="rail" aria-label="Menu categories">
+  <div class="rail__row rail__row--main">
+    <div class="rail__scroll">
+      {primary.map((c) => (
+        <button class="pill" type="button" data-target={c.id}>{c.label}</button>
+      ))}
+    </div>
+  </div>
+
+  {secondary.length > 0 && (
+    <div class="rail__row rail__row--extra">
+      <div class="rail__scroll">
+        {secondary.map((c) => (
+          <button class="pill" type="button" data-target={c.id}>{c.label}</button>
+        ))}
+      </div>
+    </div>
+  )}
+</nav>
+
+<style>
+  .rail {
+    position: sticky; top: var(--bar-h); z-index: 30;
+    background: var(--green);
+    border-bottom: 1px solid var(--rule);
+  }
+  .rail__row { display: flex; align-items: center; }
+  .rail__row--main { height: var(--rail-h); }
+  .rail__row--extra {
+    height: var(--rail2-h);
+    border-top: 1px dashed var(--rule);
+  }
+
+  .rail__scroll {
+    display: flex; gap: 8px;
+    width: 100%; max-width: var(--wrap);
+    margin-inline: auto; padding: 0 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .rail__scroll::-webkit-scrollbar { display: none; }
+
+  .pill {
+    flex: none;
+           border: 2px solid var(--grey);
+    background: var(--paper);
+    color: var(--grey);
+    font-family: var(--font-body);
+    font-size: 0.83rem; font-weight: 600;
+    padding: 7px 15px;
+    border-radius: 999px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color .18s ease, color .18s ease, border-color .18s ease;
+    
+  }
+  .pill[aria-current="true"] {
+    background: #9a9696;
+    color:var(--paper);
+
+    border-radius: 999px;
+    border: 2px solid var(--grey);
+  }
+
+  /* sweets and deals read as a different kind of thing */
+  .pill--extra {
+    background: transparent;
+    border-style: dashed;
+    border-color: var(--grey);
+  }
+  .pill--extra[aria-current="true"] {
+    background: var(--teal); border-color: var(--teal); border-style: solid; color: var(--cream);
+  }
+</style>
+
+<script>
+  const rail = document.querySelector('.rail');
+
+  if (rail) {
+    const pills = [...rail.querySelectorAll('.pill')];
+
+    /* Ignore the scroll-spy until a programmatic jump has settled, otherwise
+       the observer fires mid-scroll and fights the browser for the position. */
+    let lockUntil = 0;
+
+    /* Nudge the pill's own row sideways. Never scrollIntoView() a pill:
+       that also moves the page vertically and snaps you back to the top. */
+    const centrePill = (pill) => {
+      const row = pill.parentElement;
+      if (!row) return;
+      const max = row.scrollWidth - row.clientWidth;
+      if (max <= 0) return;
+      const wanted = pill.offsetLeft - (row.clientWidth - pill.offsetWidth) / 2;
+      row.scrollTo({ left: Math.min(Math.max(wanted, 0), max), behavior: 'smooth' });
+    };
+
+    const setActive = (id) => {
+      pills.forEach((p) => {
+        const on = p.dataset.target === id;
+        p.setAttribute('aria-current', String(on));
+        if (on) centrePill(p);
+      });
+    };
+
+    pills.forEach((pill) => {
+      pill.addEventListener('click', () => {
+        const target = document.getElementById(pill.dataset.target);
+        if (!target) return;
+        lockUntil = Date.now() + 900;
+        setActive(pill.dataset.target);
+        target.scrollIntoView({ block: 'start' });
+      });
+    });
+
+    const sections = pills
+      .map((p) => document.getElementById(p.dataset.target))
+      .filter(Boolean);
+
+    if (sections.length) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          if (Date.now() < lockUntil) return;
+          const visible = entries
+            .filter((e) => e.isIntersecting)
+            .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+          if (visible) setActive(visible.target.id);
+        },
+        { rootMargin: '-160px 0px -55% 0px', threshold: 0 }
+      );
+      sections.forEach((s) => observer.observe(s));
+      pills[0]?.setAttribute('aria-current', 'true');
+    }
+  }
+</script>

@@ -1,0 +1,90 @@
+---
+/* Brand assets are fixed files in public/ — deliberately not editable from
+   business.json, so the dashboard can never break the identity. */
+import { LOGO, PATTERN } from '../assets.js';
+
+const { brand } = Astro.props;
+---
+
+<header class="hero">
+  <div class="hero__paper" style={`background-image:url("${PATTERN}")`} aria-hidden="true"></div>
+
+  <div class="hero__inner">
+    {brand.tagline_en ? (
+      <div class="hero__badge">
+        <svg class="hero__arc" viewBox="0 0 400 170">
+          <path id="taglineArc" d="M 30 150 A 210 210 0 0 1 370 150" fill="none"></path>
+          <text class="hero__arc-text">
+            <textPath href="#taglineArc" xlink:href="#taglineArc" startOffset="50%" text-anchor="middle">
+              {brand.tagline_en}
+            </textPath>
+          </text>
+        </svg>
+        <img class="hero__logo" src={LOGO} alt={brand.name} width="600" height="600" fetchpriority="high" />
+      </div>
+    ) : (
+      <img class="hero__logo hero__logo--standalone" src={LOGO} alt={brand.name} width="600" height="600" fetchpriority="high" />
+    )}
+  </div>
+</header>
+
+<style>
+  .hero { position: relative; isolation: isolate; overflow: hidden;}
+
+  .hero__paper {
+    
+    position: absolute; inset: 0; z-index: -1;
+    background-repeat: repeat;
+    background-size: 260px auto;
+    opacity: .30;
+    filter: grayscale(1) contrast(1.1);
+  }
+
+  .hero__inner {
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px 36px;
+  }
+
+  .hero__badge {
+     margin-top:40px;
+    position: relative;
+    width: min(280px, 62vw);
+  }
+
+  .hero__arc {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  .hero__arc-text {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--grey);
+    font-size: 35px;
+    fill: var(--teal);
+    letter-spacing: 1px;
+  }
+
+  .hero__logo {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 6px 18px rgba(27, 60, 65, .18));
+  }
+
+  .hero__logo--standalone {
+    width: min(190px, 44vw);
+    margin: 0 auto;
+  }
+
+  @media (min-width: 700px) {
+    .hero__inner { padding: 40px 20px 46px; }
+    .hero__badge { width: min(320px, 40vw); }
+  }
+</style>

@@ -1,0 +1,346 @@
+---
+import { PATTERN } from '../assets.js';
+
+const { offers, currency = 'L.L.' } = Astro.props;
+
+const money = (n) => String(n ?? '').replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+const items =offers?.items ?? [];
+const rotate = Number(offers?.rotate_ms) || 3000;
+---
+
+{items.length > 0 ? (
+  <section
+    class="offers"
+    id={offers.id || 'offers'}
+    data-rotate={rotate}
+    aria-roledescription="carousel"
+    aria-label="Current offers"
+  >
+    <div class="offers__paper" style={`background-image:url("${PATTERN}")`} aria-hidden="true"></div>
+
+  
+    <div class="wrap offers__inner">
+      <header class="offers__head">
+        <h2 class="offers__title">{offers.title_en}</h2>
+        {offers.subtitle_en && <p class="offers__sub">{offers.subtitle_en}</p>}
+      </header>
+
+      <div class="carousel">
+        <button class="carousel__arrow" data-dir="-1" type="button" aria-label="Previous offer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4 7 12l8 8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+        <div class="carousel__viewport" aria-live="polite">
+          <div class="carousel__track">
+            {items.map((o, i) => (
+              <article class="offer" role="group" aria-roledescription="slide"
+                       aria-label={`Offer ${i + 1} of ${items.length}`}>
+                {o.photo
+                  ? <div class="offer__media"><img src={o.photo} alt={o.name_en} loading={i === 0 ? 'eager' : 'lazy'} /></div>
+                  : <div class="offer__media offer__media--empty" role="img" aria-label={o.name_en}></div>}
+
+                <div class="offer__body">
+                  <h3 class="offer__name">{o.name_en}</h3>
+                  {o.description_en && <p class="offer__desc">{o.description_en}</p>}
+                  {o.description_ar && <p class="offer__desc offer__desc--ar" dir="rtl" lang="ar">{o.description_ar}</p>}
+                  <p class="offer__price">{money(o.price_lbp)}<small>{currency}</small></p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <button class="carousel__arrow" data-dir="1" type="button" aria-label="Next offer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 4 8 8-8 8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+
+      <div class="carousel__dots" role="tablist" aria-label="Choose offer">
+        {items.map((o, i) => (
+          <button class="dot" type="button" role="tab" data-index={i}
+                  aria-selected={String(i === 0)} aria-label={o.name_en}></button>
+        ))}
+      </div>
+    </div>
+  </section>
+)
+
+:
+
+ <section
+    class="offers"
+    id={offers.id || 'offers'}
+    data-rotate={rotate}
+    aria-roledescription="carousel"
+    aria-label="Current offers"
+  >
+    <div class="offers__paper" style={`background-image:url("${PATTERN}")`} aria-hidden="true"></div>
+    <header class="offers__head">
+        <h2 class="offers__title cancelled-container">{offers.title_en}</h2>
+        <p class="offers__sub "> No Offers Available.</p>
+      </header>
+  </section>
+}
+
+<style>
+
+.cancelled-container {
+  position: relative;
+  display: inline-block;
+  color: #777; /* Optional: slightly fades the text underneath */
+}
+
+/* This creates the X layer on top of the text */
+.cancelled-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10; /* Ensures the X sits on top of the text */
+  pointer-events: none; /* Allows users to still click or highlight the text underneath */
+  
+  /* Draws the red X lines */
+  background: 
+    linear-gradient(to top right, transparent 47%, red 47%, red 53%, transparent 53%),
+    linear-gradient(to bottom right, transparent 47%, red 47%, red 53%, transparent 53%);
+}
+
+:global(html), :global(body) {
+  overflow-x: hidden;
+  overflow-x: clip;
+  max-width: 100%;
+}
+  .offers {
+    position: relative; isolation: isolate;
+    background: var(--teal);
+    color: var(--cream);
+    padding: 48px 0 54px;
+    margin-top: 46px;
+  }
+  .offers__paper {
+    position: absolute; inset: 0; z-index: -1;
+    background-repeat: repeat;
+    background-size: 300px auto;
+    opacity: .10;
+    filter: grayscale(1) contrast(1.1);
+  }
+
+  .offers__head { text-align: center; margin-bottom: 26px; }
+  .offers__title {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2rem, 6vw, 3rem);
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .offers__sub { margin: 8px 0 0; color: var(--green); font-weight: 600; font-size: 0.98rem; }
+
+  .carousel {
+    --card-w: 340px;
+    --card-h: 420px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(var(--card-h) + 20px);
+    perspective: 1600px;
+  }
+
+  .carousel__viewport {
+    position: relative;
+    width: var(--card-w);
+    height: var(--card-h);
+  }
+
+  .carousel__track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .offer {
+    position: absolute;
+    top: 0; left: 0;
+    width: var(--card-w);
+    height: var(--card-h);
+    display: grid;
+    background: var(--cream);
+     grid-template-rows: 62% 38%;
+    color: var(--teal);
+    border: 3px solid rgba(255, 255, 255, 0.85);
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .45);
+    transition: transform 850ms cubic-bezier(0.22, 1, 0.36, 1),
+                opacity 850ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .offer:not([data-active="true"]) { pointer-events: none; }
+
+  .offer__media { height: 100%; background: var(--cream-soft); }
+  .offer__media img { width: 100%; height: 100%; object-fit:cover    ; display: block; }
+  .offer__media--empty {
+    background-color: #EDE2C6;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%2389C642' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round' opacity='.75'%3E%3Cpath d='M36 74c0-11 9-20 20-20h8c11 0 20 9 20 20z'/%3E%3Cpath d='M32 82h56'/%3E%3Cpath d='M46 46l4-16M60 44l3-18M74 46l4-16'/%3E%3C/g%3E%3C/svg%3E");
+    background-position: center; background-repeat: no-repeat; background-size: 100px 100px;
+  }
+
+  .offer__body { padding: 16px 20px; display: grid; gap: 4px; align-content: start; overflow: hidden; }
+  .offer__name {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(1.1rem, 4vw, 1.4rem);
+    letter-spacing: -0.025em;
+  }
+  .offer__desc { margin: 0; color: var(--grey); font-size: 0.85rem; }
+  .offer__price {
+    margin-top: 6px;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(1.3rem, 5vw, 1.7rem);
+    color: var(--green-ink);
+    letter-spacing: -0.02em;
+  }
+  .offer__price small { font-size: 0.55em; font-weight: 600; color: var(--grey); margin-inline-start: 5px; }
+
+  .carousel__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    flex: none;
+    width: 38px; height: 38px;
+    display: grid; place-items: center;
+    border-radius: 50%;
+    border: 1px solid var(--rule-dark);
+    background: rgba(0, 0, 0, 0.25);
+    color: var(--cream);
+    cursor: pointer;
+    z-index: 40;
+    transition: background-color .18s ease, color .18s ease, border-color .18s ease;
+  }
+  .carousel__arrow svg { width: 18px; height: 18px; }
+  .carousel__arrow:hover { background: var(--green); border-color: var(--green); color: #123034; }
+  .carousel__arrow[data-dir="-1"] { left: 4px; }
+  .carousel__arrow[data-dir="1"] { right: 4px; }
+
+  .carousel__dots { display: flex; justify-content: center; gap: 8px; margin-top: 20px; }
+  .dot {
+    width: 8px; height: 8px; padding: 0;
+    border-radius: 50%;
+    border: none;
+    background: var(--rule-dark);
+    cursor: pointer;
+    transition: width .25s ease, background-color .25s ease;
+  }
+  .dot[aria-selected="true"] { width: 26px; border-radius: 999px; background: var(--green); }
+
+  @media (max-width: 560px) {
+    .carousel { --card-w: 78vw; --card-h: 380px; }
+    .carousel__arrow { width: 34px; height: 34px; }
+  }
+
+  @media (min-width: 700px) {
+    .carousel { --card-w: 420px; --card-h: 300px; }
+    
+    .offer { grid-template-columns: 3fr 2fr; grid-template-rows: none; align-items: stretch; }
+    .offer__media { height: 100%; }
+    .offer__body { align-content: center; padding: 22px 28px; }
+    .carousel__arrow { width: 44px; height: 44px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .offer { transition: opacity 200ms linear; }
+  }
+</style>
+
+<script>
+  const section = document.querySelector('.offers');
+
+  if (section) {
+    const cards = [...section.querySelectorAll('.offer')];
+    const viewport = section.querySelector('.carousel__viewport');
+    const dots = [...section.querySelectorAll('.dot')];
+    const total = dots.length;
+    const delay = Number(section.dataset.rotate) || 3000;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    let index = 0;
+    let timer = null;
+
+    const circularDiff = (i, active, count) => {
+      let diff = i - active;
+      if (diff > count / 2) diff -= count;
+      if (diff < -count / 2) diff += count;
+      return diff;
+    };
+
+    const go = (i) => {
+      index = ((i % total) + total) % total;
+
+      cards.forEach((card, n) => {
+        const diff = circularDiff(n, index, total);
+        let transform, opacity, zIndex;
+
+        if (diff === 0) {
+          transform = 'translateX(0) translateZ(0) rotateY(0deg) scale(1)';
+          opacity = 1; zIndex = 5;
+        } else if (diff === -1) {
+          transform = 'translateX(-62%) translateZ(-160px) rotateY(38deg) scale(0.78)';
+          opacity = 1; zIndex = 3;
+        } else if (diff === 1) {
+          transform = 'translateX(62%) translateZ(-160px) rotateY(-38deg) scale(0.78)';
+          opacity = 1; zIndex = 3;
+        } else {
+          const sign = diff > 0 ? 1 : -1;
+          transform = `translateX(${sign * 95}%) translateZ(-320px) rotateY(${sign * -48}deg) scale(0.55)`;
+          opacity = 0; zIndex = 1;
+        }
+
+        card.style.transform = transform;
+        card.style.opacity = String(opacity);
+        card.style.zIndex = String(zIndex);
+        card.setAttribute('data-active', String(diff === 0));
+      });
+
+      dots.forEach((d, n) => d.setAttribute('aria-selected', String(n === index)));
+    };
+
+    const stop = () => { if (timer) clearInterval(timer); timer = null; };
+    const start = () => {
+      if (reduced.matches || total < 2) return;
+      stop();
+      timer = setInterval(() => go(index + 1), delay);
+    };
+    const nudge = (i) => { go(i); start(); };
+
+    section.querySelectorAll('.carousel__arrow').forEach((btn) => {
+      btn.addEventListener('click', () => nudge(index + Number(btn.dataset.dir)));
+    });
+    dots.forEach((d) => d.addEventListener('click', () => nudge(Number(d.dataset.index))));
+
+    ['mouseenter', 'focusin'].forEach((ev) => viewport.addEventListener(ev, stop));
+    ['mouseleave', 'focusout'].forEach((ev) => viewport.addEventListener(ev, start));
+    document.addEventListener('visibilitychange', () => (document.hidden ? stop() : start()));
+
+    let x0 = null;
+    viewport.addEventListener('touchstart', (e) => { x0 = e.touches[0].clientX; stop(); }, { passive: true });
+    viewport.addEventListener('touchend', (e) => {
+      if (x0 !== null) {
+        const dx = e.changedTouches[0].clientX - x0;
+        if (Math.abs(dx) > 45) { nudge(index + (dx < 0 ? 1 : -1)); } else { start(); }
+        x0 = null;
+      }
+    }, { passive: true });
+
+    new IntersectionObserver(
+      ([entry]) => (entry.isIntersecting ? start() : stop()),
+      { threshold: 0.25 }
+    ).observe(viewport);
+
+    reduced.addEventListener('change', () => (reduced.matches ? stop() : start()));
+    go(0);
+  }
+</script>
