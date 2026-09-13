@@ -481,7 +481,7 @@
         "category_ar": "كريب",
         "secondary": true,
         "note_en": "Sweet moments always a good idea",
-        "note_ar": "لحظات حلوة دائماً فكرة جيدة",
+        "note_ar": "!لحظات حلوة دائماً فكرة جيدة",
         "items": [
           {
             "name_en": "Nutella Crepe",
@@ -693,4 +693,4 @@
       "tiktok": "https://tiktok.com/just.fajita.rest"
     }
   }
-}  
+}
