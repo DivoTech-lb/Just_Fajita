@@ -1,5 +1,5 @@
 {
-  "promotion": "Welcome to jjjjjjjjjj",
+  "promotion": "Welcome to Just Fajita",
   "brand": {
     "name": "Just Fajita",
     "tagline_en": "Good Food good Mood!",
@@ -109,8 +109,8 @@
             "photo": ""
           }
         ],
-        "note_en": "hello",
-        "note_ar": "test 1 "
+        "note_en": "",
+        "note_ar": ""
       },
       {
         "id": "sandwiches",
@@ -483,7 +483,7 @@
         "category_ar": "كريب",
         "secondary": true,
         "note_en": "Sweet moments always a good idea",
-        "note_ar": "!لحظات حلوة دائماً فكرة جيدة",
+        "note_ar": "",
         "items": [
           {
             "name_en": "Nutella Crepe",
