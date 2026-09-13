@@ -607,31 +607,15 @@
         "description_en": "Fajita + fries + Pepsi",
         "description_ar": "فاهيتا + بطاطا + بيبسي",
         "price_lbp": 800000,
-        "photo": "photo_5850513024102371254_x.jpg"
+        "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/dfd13013-6e73-431f-84d5-e345b62dad64-IMG_9500.jpeg"
       },
       {
         "name_en": "Chicken Sub Offer",
         "name_ar": "عرض تشيكن ساب",
         "description_en": "Chicken sub + fries + Pepsi",
-        "description_ar": "تشيكن ساب + بطاطا + بيبسي",
+        "description_ar": "شيكن ساب + بطاطا + بيبسي",
         "price_lbp": 800000,
-        "photo": "photo_5850513024102371253_x.jpg"
-      },
-      {
-        "name_en": "Francisco Offer",
-        "name_ar": "عرض فرانسيسكو",
-        "description_en": "Francisco + fries + Pepsi",
-        "description_ar": "فرانسيسكو + بطاطا + بيبسي",
-        "price_lbp": 800000,
-        "photo": ""
-      },
-      {
-        "name_en": "Kamikaz Offer",
-        "name_ar": "عرض كاميكاز",
-        "description_en": "Kamikaz + fries + Pepsi",
-        "description_ar": "كاميكاز + بطاطا + بيبسي",
-        "price_lbp": 800000,
-        "photo": "photo_5850513024102371252_x.jpg"
+        "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/49c548e5-b7b0-44a2-82ff-2e314fea43c1-IMG_9501.jpeg"
       }
     ]
   },
