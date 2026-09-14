@@ -210,7 +210,7 @@
             "name_en": "Crust Chicken",
             "name_ar": "كرست تشيكن",
             "description_en": "Chicken breast - Sweet corn - Lettuce - Mozzarella - Caesar sauce - Chips",
-            "description_ar": "صدر دجاج - ذرة حلوة - خس - موزاريلا - صلصة سيزر - شيبس",
+            "description_ar": "صدر دجاج - ذرة حلوة - خس - موزاريلا - صوص سيزر - شيبس",
             "price_lbp": 520000,
             "photo": ""
           },
@@ -226,7 +226,7 @@
             "name_en": "Sandwich Potato",
             "name_ar": "ساندويش بطاطا",
             "description_en": "Garlic sauce - Coleslaw - Pickles - Ketchup",
-            "description_ar": "صلصة ثوم - كولسلو - كبيس - كاتشب",
+            "description_ar": "صوص ثوم - كولسلو - كبيس - كاتشب",
             "price_lbp": 250000,
             "photo": ""
           }
@@ -438,7 +438,7 @@
             "name_en": "Fries Wrap",
             "name_ar": "راب بطاطا",
             "description_en": "French fries with iceberg and our boneless sauces",
-            "description_ar": "بطاطا مقلية مع خس آيسبرغ وصلصات البونليس",
+            "description_ar": "بطاطا مقلية مع خس آيسبرغ وصوصات البونليس",
             "price_lbp": 400000,
             "photo": ""
           },
