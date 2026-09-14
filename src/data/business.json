@@ -16,7 +16,7 @@
             "name_en": "Zinger",
             "name_ar": "زنغر",
             "description_en": "Cocktail sauce - Cheddar cheese - Lettuce - Tomato - Sweet corn - Jalapeño",
-            "description_ar": "صلصة كوكتيل - جبنة شيدر - خس - طماطم - ذرة حلوة - هالبينو",
+            "description_ar": "صوص كوكتيل - جبنة شيدر - خس - طماطم - ذرة حلوة - هالبينو",
             "price_lbp": 500000,
             "photo": ""
           },
@@ -24,7 +24,7 @@
             "name_en": "Zinger 112",
             "name_ar": "زنغر ١١٢",
             "description_en": "Cocktail sauce - Honey mustard - Mozzarella patty - Cheddar cheese - Lettuce - Tomato - Sweet corn - Jalapeño",
-            "description_ar": "صلصة كوكتيل - صلصة خردل بالعسل - شريحة موزاريلا - جبنة شيدر - خس - طماطم - ذرة حلوة - هالبينو",
+            "description_ar": "صوص كوكتيل - صوص خردل بالعسل - شريحة موزاريلا - جبنة شيدر - خس - طماطم - ذرة حلوة - هالبينو",
             "price_lbp": 750000,
             "photo": ""
           },
@@ -32,7 +32,7 @@
             "name_en": "Zinger Supreme",
             "name_ar": "زنغر سوبريم",
             "description_en": "Cocktail sauce - BBQ - Smoked turkey - Cheddar cheese - Lettuce - Tomato - Sweet corn - Jalapeño",
-            "description_ar": "صلصة كوكتيل - باربيكيو - حبش مدخن - جبنة شيدر - خس - طماطم - ذرة حلوة - هالبينو",
+            "description_ar": "صوص كوكتيل - باربيكيو - حبش مدخن - جبنة شيدر - خس - طماطم - ذرة حلوة - هالبينو",
             "price_lbp": 590000,
             "photo": ""
           },
@@ -121,7 +121,7 @@
             "name_en": "Fahita",
             "name_ar": "فاهيتا",
             "description_en": "Fajita sauce - Avocado sauce - Soy sauce - Mozzarella cheese - Onion - Green pepper - Sweet corn",
-            "description_ar": "صلصة فاهيتا - صلصة أفوكادو - صلصة صويا - جبنة موزاريلا - بصل - فلفل أخضر - ذرة حلوة",
+            "description_ar": "صوص فاهيتا - صوص أفوكادو - صوص صويا - جبنة موزاريلا - بصل - فلفل أخضر - ذرة حلوة",
             "price_lbp": 540000,
             "photo": ""
           },
@@ -129,7 +129,7 @@
             "name_en": "Steack",
             "name_ar": "سندويش لحمة",
             "description_en": "Steak sauce - Cooked whipped cream - Soy sauce - Mozzarella cheese - Mushroom - Mayonnaise - Sweet corn - Pickles - Lettuce",
-            "description_ar": "صلصة ستيك - كريمة مخفوقة مطبوخة - صلصة صويا - جبنة موزاريلا - فطر - مايونيز - ذرة حلوة - كبيس - خس",
+            "description_ar": "صوص ستيك - كريمة مخفوقة مطبوخة - صوص صويا - جبنة موزاريلا - فطر - مايونيز - ذرة حلوة - كبيس - خس",
             "price_lbp": 750000,
             "photo": ""
           },
@@ -137,7 +137,7 @@
             "name_en": "Philadelphia",
             "name_ar": "فيلادلفيا",
             "description_en": "Steak sauce - Cooked whipped cream - Soy sauce - Mozzarella cheese - Mushroom - Mayonnaise - Sweet corn - Onion - Lettuce - Green pepper",
-            "description_ar": "صلصة ستيك - كريمة مخفوقة مطبوخة - صلصة صويا - جبنة موزاريلا - فطر - مايونيز - ذرة حلوة - بصل - خس - فلفل أخضر",
+            "description_ar": "صوص ستيك - كريمة مخفوقة مطبوخة - صوص صويا - جبنة موزاريلا - فطر - مايونيز - ذرة حلوة - بصل - خس - فلفل أخضر",
             "price_lbp": 750000,
             "photo": ""
           },
@@ -145,7 +145,7 @@
             "name_en": "Chicken Sub",
             "name_ar": "تشيكن ساب",
             "description_en": "Mayonnaise - Soy sauce - Mozzarella cheese - Sweet corn - Lettuce - Pickles",
-            "description_ar": "مايونيز - صلصة صويا - جبنة موزاريلا - ذرة حلوة - خس - كبيس",
+            "description_ar": "مايونيز - صوص صويا - جبنة موزاريلا - ذرة حلوة - خس - كبيس",
             "price_lbp": 450000,
             "photo": ""
           },
