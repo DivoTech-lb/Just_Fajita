@@ -153,7 +153,7 @@
             "name_en": "Mexican",
             "name_ar": "مكسيكان",
             "description_en": "Mayonnaise - Buffalo sauce - Mozzarella cheese - Sweet corn - Lettuce - Jalapeño",
-            "description_ar": "مايونيز - صلصة بافالو - جبنة موزاريلا - ذرة حلوة - خس - هالبينو",
+            "description_ar": "مايونيز - صوص بافالو - جبنة موزاريلا - ذرة حلوة - خس - هالبينو",
             "price_lbp": 500000,
             "photo": "",
             "spicy": true
@@ -162,7 +162,7 @@
             "name_en": "Francisco",
             "name_ar": "فرانسيسكو",
             "description_en": "Mayonnaise - Soy sauce - Mozzarella cheese - Sweet corn - Lettuce - Pickles",
-            "description_ar": "مايونيز - صلصة صويا - جبنة موزاريلا - ذرة حلوة - خس - كبيس",
+            "description_ar": "مايونيز - صوص صويا - جبنة موزاريلا - ذرة حلوة - خس - كبيس",
             "price_lbp": 450000,
             "photo": ""
           },
@@ -170,7 +170,7 @@
             "name_en": "Escalop",
             "name_ar": "اسكالوب",
             "description_en": "Garlic sauce - Coleslaw - Pickles - Potato - Ketchup",
-            "description_ar": "صلصة ثوم - كولسلو - كبيس - بطاطا - كاتشب",
+            "description_ar": "صوص ثوم - كولسلو - كبيس - بطاطا - كاتشب",
             "price_lbp": 500000,
             "photo": ""
           },
@@ -178,7 +178,7 @@
             "name_en": "Tawook",
             "name_ar": "طاووق",
             "description_en": "Garlic sauce - Coleslaw - Pickles - Potato",
-            "description_ar": "صلصة ثوم - كولسلو - كبيس - بطاطا",
+            "description_ar": "صوص ثوم - كولسلو - كبيس - بطاطا",
             "price_lbp": 430000,
             "photo": ""
           },
@@ -186,7 +186,7 @@
             "name_en": "Crispy",
             "name_ar": "كرسبي",
             "description_en": "Garlic sauce - Coleslaw - Pickles - Potato - Ketchup",
-            "description_ar": "صلصة ثوم - كولسلو - كبيس - بطاطا - كاتشب",
+            "description_ar": "صوص ثوم - كولسلو - كبيس - بطاطا - كاتشب",
             "price_lbp": 430000,
             "photo": ""
           },
@@ -194,7 +194,7 @@
             "name_en": "Italian Chicken",
             "name_ar": "إيطاليان تشيكن",
             "description_en": "Mozzarella cheese - Honey mustard sauce - BBQ sauce - Smoked turkey - Lettuce - Sweet corn",
-            "description_ar": "جبنة موزاريلا - صلصة خردل بالعسل - صلصة باربيكيو - حبش مدخن - خس - ذرة حلوة",
+            "description_ar": "جبنة موزاريلا - صوص خردل بالعسل - صوص باربيكيو - حبش مدخن - خس - ذرة حلوة",
             "price_lbp": 540000,
             "photo": ""
           },
@@ -202,7 +202,7 @@
             "name_en": "Honey Mustard Chicken",
             "name_ar": "هني مسترد تشيكن",
             "description_en": "Chicken breast - Sweet corn - Lettuce - Honey mustard sauce - Cheddar cheese - Chips",
-            "description_ar": "صدر دجاج - ذرة حلوة - خس - صلصة خردل بالعسل - جبنة شيدر - شيبس",
+            "description_ar": "صدر دجاج - ذرة حلوة - خس - صوص خردل بالعسل - جبنة شيدر - شيبس",
             "price_lbp": 520000,
             "photo": ""
           },
@@ -312,7 +312,7 @@
             "name_en": "Chicken Ceaser",
             "name_ar": "تشيكن سيزر",
             "description_en": "Chicken breast - Lettuce - Sweet corn - Toast - Parmesan cheese, served with Caesar sauce",
-            "description_ar": "صدر دجاج - خس - ذرة حلوة - توست - جبنة بارميزان تقدّم مع صلصة سيزر",
+            "description_ar": "صدر دجاج - خس - ذرة حلوة - توست - جبنة بارميزان تقدّم مع صوص سيزر",
             "price_lbp": 700000,
             "photo": ""
           },
@@ -343,7 +343,7 @@
             "name_en": "Crispy 3 pcs",
             "name_ar": "وجبة كرسبي ٣ قطع",
             "description_en": "Fries - 1 Coleslaw - 1 Cocktail sauce - 1 Garlic sauce - Pickles",
-            "description_ar": "بطاطا مقلية - ١ كولسلو - ١ صلصة كوكتيل - ١ صلصة ثوم - كبيس",
+            "description_ar": "بطاطا مقلية - ١ كولسلو - ١ صوص كوكتيل - ١ صوص ثوم - كبيس",
             "price_lbp": 700000,
             "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/0f259429-c85e-4ae9-b8ad-e1ad45fc107a-IMG_9502.jpeg"
           },
@@ -351,7 +351,7 @@
             "name_en": "Crispy 5 pcs",
             "name_ar": "وجبة كرسبي ٥ قطع",
             "description_en": "Fries - 1 Coleslaw - 1 Cocktail sauce - 2 Garlic sauce - Pickles",
-            "description_ar": "بطاطا مقلية - ١ كولسلو - ١ صلصة كوكتيل - ٢ صلصة ثوم - كبيس",
+            "description_ar": "بطاطا مقلية - ١ كولسلو - ١ صوص كوكتيل - ٢ صوص ثوم - كبيس",
             "price_lbp": 900000,
             "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/18f439ab-e1ee-4591-b0d2-06deda6df09c-IMG_9503.jpeg"
           },
@@ -359,7 +359,7 @@
             "name_en": "Crispy 10 pcs",
             "name_ar": "وجبة كرسبي ١٠ قطع",
             "description_en": "Fries - 2 Coleslaw - 2 Cocktail sauce - 4 Garlic sauce - Pickles",
-            "description_ar": "بطاطا مقلية - ٢ كولسلو - ٢ صلصة كوكتيل - ٤ صلصة ثوم - كبيس",
+            "description_ar": "بطاطا مقلية - ٢ كولسلو - ٢ صوص كوكتيل - ٤ صوص ثوم - كبيس",
             "price_lbp": 1750000,
             "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/71db12e6-14e4-4ba3-826e-338f379b20df-IMG_9505.jpeg"
           },
@@ -367,7 +367,7 @@
             "name_en": "Escalope",
             "name_ar": "اسكالوب",
             "description_en": "2 pieces escalope - Fries - Coleslaw - Cocktail sauce - Garlic sauce - Pickles",
-            "description_ar": "قطعتان إسكالوب - بطاطا مقلية - كولسلو - صلصة كوكتيل - صلصة ثوم - كبيس",
+            "description_ar": "قطعتان إسكالوب - بطاطا مقلية - كولسلو - صوص كوكتيل - صوص ثوم - كبيس",
             "price_lbp": 900000,
             "photo": ""
           },
@@ -375,7 +375,7 @@
             "name_en": "Escalopini",
             "name_ar": "اسكالوبيني",
             "description_en": "2 pieces escalope with mixed cheese (cheddar & mozzarella) - Wedges - Small Caesar salad - Honey mustard sauce",
-            "description_ar": "قطعتان إسكالوب مع مزيج جبنة (شيدر وموزاريلا) - ودجز - سلطة سيزر صغيرة - صلصة خردل بالعسل",
+            "description_ar": "قطعتان إسكالوب مع مزيج جبنة (شيدر وموزاريلا) - ودجز - سلطة سيزر صغيرة - صوص خردل بالعسل",
             "price_lbp": 1090000,
             "photo": ""
           },
@@ -383,7 +383,7 @@
             "name_en": "Mix Plate",
             "name_ar": "صحن مشكل",
             "description_en": "1 chicken breast - 1 crispy chicken - 1 escalope - Fries - Coleslaw - Cocktail sauce - Pickles",
-            "description_ar": "صدر دجاج قطعة - دجاج مقرمش قطعة - إسكالوب قطعة - بطاطا مقلية - كولسلو - صلصة كوكتيل - كبيس",
+            "description_ar": "صدر دجاج قطعة - دجاج مقرمش قطعة - إسكالوب قطعة - بطاطا مقلية - كولسلو - صوص كوكتيل - كبيس",
             "price_lbp": 950000,
             "photo": ""
           },
@@ -391,7 +391,7 @@
             "name_en": "Tawook",
             "name_ar": "طاووق",
             "description_en": "Tawook - Fries - Coleslaw - Cocktail sauce - Garlic sauce - Pickles",
-            "description_ar": "طاووق - بطاطا مقلية - كولسلو - صلصة كوكتيل - صلصة ثوم - كبيس",
+            "description_ar": "طاووق - بطاطا مقلية - كولسلو - صوص كوكتيل - صوص ثوم - كبيس",
             "price_lbp": 950000,
             "photo": ""
           },
@@ -399,7 +399,7 @@
             "name_en": "Original Chicken",
             "name_ar": "صحن دجاج",
             "description_en": "2 pieces chicken breast - Fries - Small green salad - Garlic sauce - Pickles",
-            "description_ar": "قطعتان صدر دجاج - بطاطا مقلية - سلطة خضراء صغيرة - صلصة ثوم - كبيس",
+            "description_ar": "قطعتان صدر دجاج - بطاطا مقلية - سلطة خضراء صغيرة - صوص ثوم - كبيس",
             "price_lbp": 910000,
             "photo": ""
           },
@@ -407,7 +407,7 @@
             "name_en": "Nuggets 8 pcs",
             "name_ar": "ناغتس ٨ قطع",
             "description_en": "8 pcs nuggets - Fries - 1 Garlic sauce - 2 Cocktail sauce - 1 Coleslaw",
-            "description_ar": "٨ حبات ناغتس - بطاطا مقلية - ١ صلصة ثوم - ٢ صلصة كوكتيل - ١ كولسلو",
+            "description_ar": "٨ حبات ناغتس - بطاطا مقلية - ١ صوص ثوم - ٢ صوص كوكتيل - ١ كولسلو",
             "price_lbp": 700000,
             "photo": ""
           }
@@ -422,7 +422,7 @@
             "name_en": "Boneless Chicken Wrap",
             "name_ar": "راب دجاج بونليس",
             "description_en": "Deep-fried breaded chicken breast with iceberg and chips sticks in a spread of mix sauce",
-            "description_ar": "صدر دجاج مقرمش مقلي مع خس آيسبرغ وشيبس وصلصة مشكلة",
+            "description_ar": "صدر دجاج مقرمش مقلي مع خس آيسبرغ وشيبس وصوص مشكلة",
             "price_lbp": 650000,
             "photo": ""
           },
@@ -430,7 +430,7 @@
             "name_en": "Escalop Chicken Wrap",
             "name_ar": "راب اسكالوب دجاج",
             "description_en": "Deep-fried breaded chicken strips with iceberg and chips sticks in a spread of honey mustard sauce",
-            "description_ar": "شرائح دجاج مقرمشة مقلية مع خس آيسبرغ وشيبس وصلصة خردل بالعسل",
+            "description_ar": "شرائح دجاج مقرمشة مقلية مع خس آيسبرغ وشيبس وصوص خردل بالعسل",
             "price_lbp": 630000,
             "photo": ""
           },
@@ -446,7 +446,7 @@
             "name_en": "Mix Cheese Wrap",
             "name_ar": "راب جبنة مشكلة",
             "description_en": "Mozzarella sticks with melted cheddar, iceberg, chips sticks, ranch sauce and honey mustard sauce",
-            "description_ar": "أصابع موزاريلا مع شيدر ذائب وخس آيسبرغ وشيبس وصلصة رانش وصلصة خردل بالعسل",
+            "description_ar": "أصابع موزاريلا مع شيدر ذائب وخس آيسبرغ وشيبس وصوص رانش وصوص خردل بالعسل",
             "price_lbp": 520000,
             "photo": ""
           },
@@ -454,7 +454,7 @@
             "name_en": "Buffalo Wrap",
             "name_ar": "راب بافالو",
             "description_en": "Crispy chicken dipped in buffalo sauce with iceberg, chips sticks, honey mustard and ranch",
-            "description_ar": "دجاج مقرمش بصلصة بافالو مع خس آيسبرغ وشيبس وصلصة خردل بالعسل ورانش",
+            "description_ar": "دجاج مقرمش بصوص بافالو مع خس آيسبرغ وشيبس وصوص خردل بالعسل ورانش",
             "price_lbp": 650000,
             "photo": "",
             "spicy": true
@@ -463,7 +463,7 @@
             "name_en": "Twister Wrap",
             "name_ar": "راب تويستر",
             "description_en": "Crispy tenders wrapped with cheddar slice, iceberg lettuce, tomato slices and special sauce",
-            "description_ar": "قطع دجاج مقرمشة مع شريحة شيدر وخس آيسبرغ وشرائح طماطم وصلصة خاصة",
+            "description_ar": "قطع دجاج مقرمشة مع شريحة شيدر وخس آيسبرغ وشرائح طماطم وصوص خاصة",
             "price_lbp": 650000,
             "photo": ""
           },
@@ -471,7 +471,7 @@
             "name_en": "Special Wrap",
             "name_ar": "راب سبيشل",
             "description_en": "Crispy tenders wrapped with mozzarella sticks, iceberg, melted cheddar and special sauce",
-            "description_ar": "قطع دجاج مقرمشة مع أصابع موزاريلا وخس آيسبرغ وشيدر ذائب وصلصة خاصة",
+            "description_ar": "قطع دجاج مقرمشة مع أصابع موزاريلا وخس آيسبرغ وشيدر ذائب وصوص خاصة",
             "price_lbp": 680000,
             "photo": ""
           }
