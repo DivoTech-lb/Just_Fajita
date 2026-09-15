@@ -8,109 +8,106 @@
   "menu": {
     "categories": [
       {
-        "id": "burger-zinger",
-        "category_en": "Burger & Zinger",
-        "category_ar": "برغر وزنجر",
+        "id": "appetizers",
+        "category_en": "Appetizers",
+        "category_ar": "مقبلات",
         "items": [
           {
-            "name_en": "Zinger",
-            "name_ar": "زنغر",
-            "description_en": "Cocktail sauce - Cheddar cheese - Lettuce - Tomato - Sweet corn - Jalapeño",
-            "description_ar": "صوص كوكتيل - جبنة شيدر - خس - طماطم - ذرة حلوة - هالبينو",
+            "name_en": "Fries Small",
+            "name_ar": "بطاطا صغيرة",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 300000,
+            "photo": ""
+          },
+          {
+            "name_en": "Fries Large",
+            "name_ar": "بطاطا كبيرة",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 450000,
+            "photo": ""
+          },
+          {
+            "name_en": "Wedges",
+            "name_ar": "ودجز",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 400000,
+            "photo": ""
+          },
+          {
+            "name_en": "Curly Fries",
+            "name_ar": "كيرلي فرايز",
+            "description_en": "",
+            "description_ar": "",
             "price_lbp": 500000,
             "photo": ""
           },
           {
-            "name_en": "Zinger 112",
-            "name_ar": "زنغر ١١٢",
-            "description_en": "Cocktail sauce - Honey mustard - Mozzarella patty - Cheddar cheese - Lettuce - Tomato - Sweet corn - Jalapeño",
-            "description_ar": "صوص كوكتيل - صوص خردل بالعسل - شريحة موزاريلا - جبنة شيدر - خس - طماطم - ذرة حلوة - هالبينو",
-            "price_lbp": 750000,
-            "photo": ""
-          },
-          {
-            "name_en": "Zinger Supreme",
-            "name_ar": "زنغر سوبريم",
-            "description_en": "Cocktail sauce - BBQ - Smoked turkey - Cheddar cheese - Lettuce - Tomato - Sweet corn - Jalapeño",
-            "description_ar": "صوص كوكتيل - باربيكيو - حبش مدخن - جبنة شيدر - خس - طماطم - ذرة حلوة - هالبينو",
-            "price_lbp": 590000,
-            "photo": ""
-          },
-          {
-            "name_en": "Lebanese Burger",
-            "name_ar": "برغر لبناني",
+            "name_en": "Mozzarella Sticks",
+            "name_ar": "أصابع موزاريلا",
             "description_en": "",
             "description_ar": "",
-            "price_lbp": 580000,
+            "price_lbp": 450000,
             "photo": ""
           },
           {
-            "name_en": "Cheese Burger",
-            "name_ar": "تشيز برغر",
+            "name_en": "Cheddar Balls",
+            "name_ar": "كرات شيدر",
             "description_en": "",
             "description_ar": "",
-            "price_lbp": 630000,
+            "price_lbp": 450000,
             "photo": ""
           },
           {
-            "name_en": "American",
-            "name_ar": "أميريكان",
+            "name_en": "Crazy Chicken",
+            "name_ar": "كريزي تشيكن",
             "description_en": "",
             "description_ar": "",
-            "price_lbp": 630000,
+            "price_lbp": 730000,
             "photo": ""
           },
           {
-            "name_en": "Mozzarella Chicken",
-            "name_ar": "موزاريلا دجاج",
-            "description_en": "",
-            "description_ar": "",
-            "price_lbp": 720000,
-            "photo": ""
-          },
-          {
-            "name_en": "Mozzarella Beef",
-            "name_ar": "موزاريلا لحمة",
-            "description_en": "",
-            "description_ar": "",
-            "price_lbp": 770000,
-            "photo": ""
-          },
-          {
-            "name_en": "Chicken Breast",
-            "name_ar": "صدر دجاج",
-            "description_en": "",
-            "description_ar": "",
-            "price_lbp": 640000,
-            "photo": ""
-          },
-          {
-            "name_en": "Chicken Breaded",
-            "name_ar": "دجاج مقرمش",
-            "description_en": "",
-            "description_ar": "",
-            "price_lbp": 610000,
-            "photo": ""
-          },
-          {
-            "name_en": "Escalop Burger",
-            "name_ar": "برغر اسكالوب",
-            "description_en": "",
-            "description_ar": "",
-            "price_lbp": 550000,
-            "photo": ""
-          },
-          {
-            "name_en": "Chicken Burger",
-            "name_ar": "برغر دجاج",
-            "description_en": "",
-            "description_ar": "",
-            "price_lbp": 590000,
+            "name_en": "Fries & Cheese",
+            "name_ar": "بطاطا مع جبنة",
+            "description_en": "Mozzarella & cheddar",
+            "description_ar": "موزاريلا وشيدر",
+            "price_lbp": 600000,
             "photo": ""
           }
-        ],
-        "note_en": "",
-        "note_ar": ""
+        ]
+      },
+      {
+        "id": "salad",
+        "category_en": "Salad",
+        "category_ar": "سلطة",
+        "items": [
+          {
+            "name_en": "Chicken Ceaser",
+            "name_ar": "تشيكن سيزر",
+            "description_en": "Chicken breast - Lettuce - Sweet corn - Toast - Parmesan cheese, served with Caesar sauce",
+            "description_ar": "صدر دجاج - خس - ذرة حلوة - توست - جبنة بارميزان تقدّم مع صوص سيزر",
+            "price_lbp": 700000,
+            "photo": ""
+          },
+          {
+            "name_en": "Chicken Salad",
+            "name_ar": "سلطة دجاج",
+            "description_en": "Iceberg - Tomato - Cucumber - Corn - Shredded carrot - Chicken breast - Mozzarella",
+            "description_ar": "خس آيسبرغ - طماطم - خيار - ذرة - جزر مبشور - صدر دجاج - جبنة موزاريلا",
+            "price_lbp": 650000,
+            "photo": ""
+          },
+          {
+            "name_en": "Season Salad",
+            "name_ar": "سلطة الموسم",
+            "description_en": "Iceberg - Cucumber - Tomato - Corn - Shredded carrot",
+            "description_ar": "خس آيسبرغ - خيار - طماطم - ذرة - جزر مبشور",
+            "price_lbp": 400000,
+            "photo": ""
+          }
+        ]
       },
       {
         "id": "sandwiches",
@@ -233,106 +230,173 @@
         ]
       },
       {
-        "id": "appetizers",
-        "category_en": "Appetizers",
-        "category_ar": "مقبلات",
+        "id": "wraps",
+        "category_en": "Wraps",
+        "category_ar": "راب",
         "items": [
           {
-            "name_en": "Fries Small",
-            "name_ar": "بطاطا صغيرة",
-            "description_en": "",
-            "description_ar": "",
-            "price_lbp": 300000,
+            "name_en": "Boneless Chicken Wrap",
+            "name_ar": "راب دجاج بونليس",
+            "description_en": "Deep-fried breaded chicken breast with iceberg and chips sticks in a spread of mix sauce",
+            "description_ar": "صدر دجاج مقرمش مقلي مع خس آيسبرغ وشيبس وصوص مشكلة",
+            "price_lbp": 650000,
             "photo": ""
           },
           {
-            "name_en": "Fries Large",
-            "name_ar": "بطاطا كبيرة",
-            "description_en": "",
-            "description_ar": "",
-            "price_lbp": 450000,
+            "name_en": "Escalop Chicken Wrap",
+            "name_ar": "راب اسكالوب دجاج",
+            "description_en": "Deep-fried breaded chicken strips with iceberg and chips sticks in a spread of honey mustard sauce",
+            "description_ar": "شرائح دجاج مقرمشة مقلية مع خس آيسبرغ وشيبس وصوص خردل بالعسل",
+            "price_lbp": 630000,
             "photo": ""
           },
           {
-            "name_en": "Wedges",
-            "name_ar": "ودجز",
-            "description_en": "",
-            "description_ar": "",
+            "name_en": "Fries Wrap",
+            "name_ar": "راب بطاطا",
+            "description_en": "French fries with iceberg and our boneless sauces",
+            "description_ar": "بطاطا مقلية مع خس آيسبرغ وصوصات البونليس",
             "price_lbp": 400000,
             "photo": ""
           },
           {
-            "name_en": "Curly Fries",
-            "name_ar": "كيرلي فرايز",
-            "description_en": "",
-            "description_ar": "",
-            "price_lbp": 500000,
+            "name_en": "Mix Cheese Wrap",
+            "name_ar": "راب جبنة مشكلة",
+            "description_en": "Mozzarella sticks with melted cheddar, iceberg, chips sticks, ranch sauce and honey mustard sauce",
+            "description_ar": "أصابع موزاريلا مع شيدر ذائب وخس آيسبرغ وشيبس وصوص رانش وصوص خردل بالعسل",
+            "price_lbp": 520000,
             "photo": ""
           },
           {
-            "name_en": "Mozzarella Sticks",
-            "name_ar": "أصابع موزاريلا",
-            "description_en": "",
-            "description_ar": "",
-            "price_lbp": 450000,
+            "name_en": "Buffalo Wrap",
+            "name_ar": "راب بافالو",
+            "description_en": "Crispy chicken dipped in buffalo sauce with iceberg, chips sticks, honey mustard and ranch",
+            "description_ar": "دجاج مقرمش بصوص بافالو مع خس آيسبرغ وشيبس وصوص خردل بالعسل ورانش",
+            "price_lbp": 650000,
+            "photo": "",
+            "spicy": true
+          },
+          {
+            "name_en": "Twister Wrap",
+            "name_ar": "راب تويستر",
+            "description_en": "Crispy tenders wrapped with cheddar slice, iceberg lettuce, tomato slices and special sauce",
+            "description_ar": "قطع دجاج مقرمشة مع شريحة شيدر وخس آيسبرغ وشرائح طماطم وصوص خاصة",
+            "price_lbp": 650000,
             "photo": ""
           },
           {
-            "name_en": "Cheddar Balls",
-            "name_ar": "كرات شيدر",
-            "description_en": "",
-            "description_ar": "",
-            "price_lbp": 450000,
-            "photo": ""
-          },
-          {
-            "name_en": "Crazy Chicken",
-            "name_ar": "كريزي تشيكن",
-            "description_en": "",
-            "description_ar": "",
-            "price_lbp": 730000,
-            "photo": ""
-          },
-          {
-            "name_en": "Fries & Cheese",
-            "name_ar": "بطاطا مع جبنة",
-            "description_en": "Mozzarella & cheddar",
-            "description_ar": "موزاريلا وشيدر",
-            "price_lbp": 600000,
+            "name_en": "Special Wrap",
+            "name_ar": "راب سبيشل",
+            "description_en": "Crispy tenders wrapped with mozzarella sticks, iceberg, melted cheddar and special sauce",
+            "description_ar": "قطع دجاج مقرمشة مع أصابع موزاريلا وخس آيسبرغ وشيدر ذائب وصوص خاصة",
+            "price_lbp": 680000,
             "photo": ""
           }
         ]
       },
       {
-        "id": "salad",
-        "category_en": "Salad",
-        "category_ar": "سلطة",
+        "id": "burger-zinger",
+        "category_en": "Burger & Zinger",
+        "category_ar": "برغر وزنجر",
         "items": [
           {
-            "name_en": "Chicken Ceaser",
-            "name_ar": "تشيكن سيزر",
-            "description_en": "Chicken breast - Lettuce - Sweet corn - Toast - Parmesan cheese, served with Caesar sauce",
-            "description_ar": "صدر دجاج - خس - ذرة حلوة - توست - جبنة بارميزان تقدّم مع صوص سيزر",
-            "price_lbp": 700000,
+            "name_en": "Zinger",
+            "name_ar": "زنغر",
+            "description_en": "Cocktail sauce - Cheddar cheese - Lettuce - Tomato - Sweet corn - Jalapeño",
+            "description_ar": "صوص كوكتيل - جبنة شيدر - خس - طماطم - ذرة حلوة - هالبينو",
+            "price_lbp": 500000,
             "photo": ""
           },
           {
-            "name_en": "Chicken Salad",
-            "name_ar": "سلطة دجاج",
-            "description_en": "Iceberg - Tomato - Cucumber - Corn - Shredded carrot - Chicken breast - Mozzarella",
-            "description_ar": "خس آيسبرغ - طماطم - خيار - ذرة - جزر مبشور - صدر دجاج - جبنة موزاريلا",
-            "price_lbp": 650000,
+            "name_en": "Zinger 112",
+            "name_ar": "زنغر ١١٢",
+            "description_en": "Cocktail sauce - Honey mustard - Mozzarella patty - Cheddar cheese - Lettuce - Tomato - Sweet corn - Jalapeño",
+            "description_ar": "صوص كوكتيل - صوص خردل بالعسل - شريحة موزاريلا - جبنة شيدر - خس - طماطم - ذرة حلوة - هالبينو",
+            "price_lbp": 750000,
             "photo": ""
           },
           {
-            "name_en": "Season Salad",
-            "name_ar": "سلطة الموسم",
-            "description_en": "Iceberg - Cucumber - Tomato - Corn - Shredded carrot",
-            "description_ar": "خس آيسبرغ - خيار - طماطم - ذرة - جزر مبشور",
-            "price_lbp": 400000,
+            "name_en": "Zinger Supreme",
+            "name_ar": "زنغر سوبريم",
+            "description_en": "Cocktail sauce - BBQ - Smoked turkey - Cheddar cheese - Lettuce - Tomato - Sweet corn - Jalapeño",
+            "description_ar": "صوص كوكتيل - باربيكيو - حبش مدخن - جبنة شيدر - خس - طماطم - ذرة حلوة - هالبينو",
+            "price_lbp": 590000,
+            "photo": ""
+          },
+          {
+            "name_en": "Lebanese Burger",
+            "name_ar": "برغر لبناني",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 580000,
+            "photo": ""
+          },
+          {
+            "name_en": "Cheese Burger",
+            "name_ar": "تشيز برغر",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 630000,
+            "photo": ""
+          },
+          {
+            "name_en": "American",
+            "name_ar": "أميريكان",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 630000,
+            "photo": ""
+          },
+          {
+            "name_en": "Mozzarella Chicken",
+            "name_ar": "موزاريلا دجاج",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 720000,
+            "photo": ""
+          },
+          {
+            "name_en": "Mozzarella Beef",
+            "name_ar": "موزاريلا لحمة",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 770000,
+            "photo": ""
+          },
+          {
+            "name_en": "Chicken Breast",
+            "name_ar": "صدر دجاج",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 640000,
+            "photo": ""
+          },
+          {
+            "name_en": "Chicken Breaded",
+            "name_ar": "دجاج مقرمش",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 610000,
+            "photo": ""
+          },
+          {
+            "name_en": "Escalop Burger",
+            "name_ar": "برغر اسكالوب",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 550000,
+            "photo": ""
+          },
+          {
+            "name_en": "Chicken Burger",
+            "name_ar": "برغر دجاج",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 590000,
             "photo": ""
           }
-        ]
+        ],
+        "note_en": "",
+        "note_ar": ""
       },
       {
         "id": "plate",
@@ -409,70 +473,6 @@
             "description_en": "8 pcs nuggets - Fries - 1 Garlic sauce - 2 Cocktail sauce - 1 Coleslaw",
             "description_ar": "٨ حبات ناغتس - بطاطا مقلية - ١ صوص ثوم - ٢ صوص كوكتيل - ١ كولسلو",
             "price_lbp": 700000,
-            "photo": ""
-          }
-        ]
-      },
-      {
-        "id": "wraps",
-        "category_en": "Wraps",
-        "category_ar": "راب",
-        "items": [
-          {
-            "name_en": "Boneless Chicken Wrap",
-            "name_ar": "راب دجاج بونليس",
-            "description_en": "Deep-fried breaded chicken breast with iceberg and chips sticks in a spread of mix sauce",
-            "description_ar": "صدر دجاج مقرمش مقلي مع خس آيسبرغ وشيبس وصوص مشكلة",
-            "price_lbp": 650000,
-            "photo": ""
-          },
-          {
-            "name_en": "Escalop Chicken Wrap",
-            "name_ar": "راب اسكالوب دجاج",
-            "description_en": "Deep-fried breaded chicken strips with iceberg and chips sticks in a spread of honey mustard sauce",
-            "description_ar": "شرائح دجاج مقرمشة مقلية مع خس آيسبرغ وشيبس وصوص خردل بالعسل",
-            "price_lbp": 630000,
-            "photo": ""
-          },
-          {
-            "name_en": "Fries Wrap",
-            "name_ar": "راب بطاطا",
-            "description_en": "French fries with iceberg and our boneless sauces",
-            "description_ar": "بطاطا مقلية مع خس آيسبرغ وصوصات البونليس",
-            "price_lbp": 400000,
-            "photo": ""
-          },
-          {
-            "name_en": "Mix Cheese Wrap",
-            "name_ar": "راب جبنة مشكلة",
-            "description_en": "Mozzarella sticks with melted cheddar, iceberg, chips sticks, ranch sauce and honey mustard sauce",
-            "description_ar": "أصابع موزاريلا مع شيدر ذائب وخس آيسبرغ وشيبس وصوص رانش وصوص خردل بالعسل",
-            "price_lbp": 520000,
-            "photo": ""
-          },
-          {
-            "name_en": "Buffalo Wrap",
-            "name_ar": "راب بافالو",
-            "description_en": "Crispy chicken dipped in buffalo sauce with iceberg, chips sticks, honey mustard and ranch",
-            "description_ar": "دجاج مقرمش بصوص بافالو مع خس آيسبرغ وشيبس وصوص خردل بالعسل ورانش",
-            "price_lbp": 650000,
-            "photo": "",
-            "spicy": true
-          },
-          {
-            "name_en": "Twister Wrap",
-            "name_ar": "راب تويستر",
-            "description_en": "Crispy tenders wrapped with cheddar slice, iceberg lettuce, tomato slices and special sauce",
-            "description_ar": "قطع دجاج مقرمشة مع شريحة شيدر وخس آيسبرغ وشرائح طماطم وصوص خاصة",
-            "price_lbp": 650000,
-            "photo": ""
-          },
-          {
-            "name_en": "Special Wrap",
-            "name_ar": "راب سبيشل",
-            "description_en": "Crispy tenders wrapped with mozzarella sticks, iceberg, melted cheddar and special sauce",
-            "description_ar": "قطع دجاج مقرمشة مع أصابع موزاريلا وخس آيسبرغ وشيدر ذائب وصوص خاصة",
-            "price_lbp": 680000,
             "photo": ""
           }
         ]
