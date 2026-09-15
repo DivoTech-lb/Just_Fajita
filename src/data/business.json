@@ -488,7 +488,7 @@
         "id": "crepe",
         "category_en": "Crepe",
         "category_ar": "كريب",
-        "type": "special",
+        "type": "normal",
         "note_en": "Sweet moments always a good idea",
         "note_ar": "",
         "items": [
