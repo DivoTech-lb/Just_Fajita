@@ -3,7 +3,8 @@
   "brand": {
     "name": "Just Fajita",
     "tagline_en": "Good Food good Mood!",
-    "currency_label": "L.L."
+    "currency_label": "L.L.",
+    "hero_pattern": "/pattern.jpg"
   },
   "menu": {
     "categories": [
@@ -11,6 +12,7 @@
         "id": "appetizers",
         "category_en": "Appetizers",
         "category_ar": "مقبلات",
+        "type": "normal",
         "items": [
           {
             "name_en": "Fries Small",
@@ -82,6 +84,7 @@
         "id": "salad",
         "category_en": "Salad",
         "category_ar": "سلطة",
+        "type": "normal",
         "items": [
           {
             "name_en": "Chicken Ceaser",
@@ -113,6 +116,7 @@
         "id": "sandwiches",
         "category_en": "Sandwiches",
         "category_ar": "سندويشات",
+        "type": "normal",
         "items": [
           {
             "name_en": "Fahita",
@@ -233,6 +237,7 @@
         "id": "wraps",
         "category_en": "Wraps",
         "category_ar": "راب",
+        "type": "normal",
         "items": [
           {
             "name_en": "Boneless Chicken Wrap",
@@ -297,6 +302,7 @@
         "id": "burger-zinger",
         "category_en": "Burger & Zinger",
         "category_ar": "برغر وزنجر",
+        "type": "normal",
         "items": [
           {
             "name_en": "Zinger",
@@ -402,6 +408,7 @@
         "id": "plate",
         "category_en": "Plate",
         "category_ar": "صحون",
+        "type": "normal",
         "items": [
           {
             "name_en": "Crispy 3 pcs",
@@ -481,7 +488,7 @@
         "id": "crepe",
         "category_en": "Crepe",
         "category_ar": "كريب",
-        "secondary": true,
+        "type": "normal",
         "note_en": "Sweet moments always a good idea",
         "note_ar": "",
         "items": [
@@ -582,40 +589,41 @@
             "photo": ""
           }
         ]
-      }
-    ]
-  },
-  "offers": {
-    "id": "offers",
-    "title_en": "Offers",
-    "title_ar": "عروض",
-    "subtitle_en": "Sandwich + fries + Pepsi",
-    "subtitle_ar": "سندويش + بطاطا + بيبسي",
-    "rotate_ms": 3000,
-    "items": [
-      {
-        "name_en": "Zinger Offer",
-        "name_ar": "عرض زنغر",
-        "description_en": "Zinger + fries + Pepsi",
-        "description_ar": "زنغر + بطاطا + بيبسي",
-        "price_lbp": 800000,
-        "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/c54d695a-196c-4a39-8f1a-c3ef001f48ff-IMG_9498.jpeg"
       },
       {
-        "name_en": "Fajita Offer",
-        "name_ar": "عرض فاهيتا",
-        "description_en": "Fajita + fries + Pepsi",
-        "description_ar": "فاهيتا + بطاطا + بيبسي",
-        "price_lbp": 800000,
-        "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/dfd13013-6e73-431f-84d5-e345b62dad64-IMG_9500.jpeg"
-      },
-      {
-        "name_en": "Chicken Sub Offer",
-        "name_ar": "عرض تشيكن ساب",
-        "description_en": "Chicken sub + fries + Pepsi",
-        "description_ar": "شيكن ساب + بطاطا + بيبسي",
-        "price_lbp": 800000,
-        "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/49c548e5-b7b0-44a2-82ff-2e314fea43c1-IMG_9501.jpeg"
+        "id": "offers",
+        "category_en": "Offers",
+        "category_ar": "عروض",
+        "type": "special",
+        "note_en": "Sandwich + fries + Pepsi",
+        "note_ar": "سندويش + بطاطا + بيبسي",
+        "rotate_ms": 3000,
+        "items": [
+          {
+            "name_en": "Zinger Offer",
+            "name_ar": "عرض زنغر",
+            "description_en": "Zinger + fries + Pepsi",
+            "description_ar": "زنغر + بطاطا + بيبسي",
+            "price_lbp": 800000,
+            "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/c54d695a-196c-4a39-8f1a-c3ef001f48ff-IMG_9498.jpeg"
+          },
+          {
+            "name_en": "Fajita Offer",
+            "name_ar": "عرض فاهيتا",
+            "description_en": "Fajita + fries + Pepsi",
+            "description_ar": "فاهيتا + بطاطا + بيبسي",
+            "price_lbp": 800000,
+            "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/dfd13013-6e73-431f-84d5-e345b62dad64-IMG_9500.jpeg"
+          },
+          {
+            "name_en": "Chicken Sub Offer",
+            "name_ar": "عرض تشيكن ساب",
+            "description_en": "Chicken sub + fries + Pepsi",
+            "description_ar": "شيكن ساب + بطاطا + بيبسي",
+            "price_lbp": 800000,
+            "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/49c548e5-b7b0-44a2-82ff-2e314fea43c1-IMG_9501.jpeg"
+          }
+        ]
       }
     ]
   },

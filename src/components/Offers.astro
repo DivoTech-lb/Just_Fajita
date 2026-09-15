@@ -1,28 +1,28 @@
 ---
 import { PATTERN } from '../assets.js';
 
-const { offers, currency = 'L.L.' } = Astro.props;
+const { category, currency = 'L.L.' } = Astro.props;
 
 const money = (n) => String(n ?? '').replace(/\B(?=(\d{3})+(?!\d))/g, '.');
-const items =offers?.items ?? [];
-const rotate = Number(offers?.rotate_ms) || 3000;
+const items = category?.items ?? [];
+const rotate = Number(category?.rotate_ms) || 3000;
 ---
 
 {items.length > 0 ? (
   <section
     class="offers"
-    id={offers.id || 'offers'}
+    id={category.id || 'offers'}
     data-rotate={rotate}
     aria-roledescription="carousel"
     aria-label="Current offers"
   >
     <div class="offers__paper" style={`background-image:url("${PATTERN}")`} aria-hidden="true"></div>
 
-  
+
     <div class="wrap offers__inner">
       <header class="offers__head">
-        <h2 class="offers__title">{offers.title_en}</h2>
-        {offers.subtitle_en && <p class="offers__sub">{offers.subtitle_en}</p>}
+        <h2 class="offers__title">{category.category_en}</h2>
+        {category.note_en && <p class="offers__sub">{category.note_en}</p>}
       </header>
 
       <div class="carousel">
@@ -69,14 +69,14 @@ const rotate = Number(offers?.rotate_ms) || 3000;
 
  <section
     class="offers"
-    id={offers.id || 'offers'}
+    id={category.id || 'offers'}
     data-rotate={rotate}
     aria-roledescription="carousel"
     aria-label="Current offers"
   >
     <div class="offers__paper" style={`background-image:url("${PATTERN}")`} aria-hidden="true"></div>
     <header class="offers__head">
-        <h2 class="offers__title cancelled-container">{offers.title_en}</h2>
+        <h2 class="offers__title cancelled-container">{category.category_en}</h2>
         <p class="offers__sub "> No Offers Available.</p>
       </header>
   </section>

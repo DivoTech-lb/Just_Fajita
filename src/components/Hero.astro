@@ -1,13 +1,17 @@
 ---
-/* Brand assets are fixed files in public/ — deliberately not editable from
-   business.json, so the dashboard can never break the identity. */
-import { LOGO, PATTERN } from '../assets.js';
+/* The logo is a fixed file in public/ — deliberately not editable from
+   business.json, so the dashboard can never break the identity. The
+   background pattern, however, is editable via brand.hero_pattern. */
+import { LOGO } from '../assets.js';
 
 const { brand } = Astro.props;
+const heroPaperStyle = brand.hero_pattern
+  ? `background-image:url("${brand.hero_pattern}")`
+  : undefined;
 ---
 
 <header class="hero">
-  <div class="hero__paper" style={`background-image:url("${PATTERN}")`} aria-hidden="true"></div>
+  <div class="hero__paper" style={heroPaperStyle} aria-hidden="true"></div>
 
   <div class="hero__inner">
     {brand.tagline_en ? (

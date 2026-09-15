@@ -1,34 +1,46 @@
 ---
-const { categories = [], offers } = Astro.props;
+const { categories = [] } = Astro.props;
 
 const primary = categories
-  .filter((c) => !c.secondary)
+  .filter((c) => c.type !== 'special')
   .map((c) => ({ id: c.id, label: c.category_en }));
 
 const secondary = categories
-  .filter((c) => c.secondary)
+  .filter((c) => c.type === 'special' && c.items?.length)
   .map((c) => ({ id: c.id, label: c.category_en }));
-
-if (offers?.items?.length) {
-  secondary.push({ id: offers.id || 'offers', label: offers.title_en || 'Offers' });
-}
 ---
 
 <nav class="rail" aria-label="Menu categories">
   <div class="rail__row rail__row--main">
-    <div class="rail__scroll">
-      {primary.map((c) => (
-        <button class="pill" type="button" data-target={c.id}>{c.label}</button>
-      ))}
+    <div class="rail__viewport">
+      <button class="rail__arrow rail__arrow--left" type="button" aria-label="Scroll categories left" data-scroll-dir="-1">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4 7 12l8 8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="rail__scroll">
+        {primary.map((c) => (
+          <button class="pill" type="button" data-target={c.id}>{c.label}</button>
+        ))}
+      </div>
+      <button class="rail__arrow rail__arrow--right" type="button" aria-label="Scroll categories right" data-scroll-dir="1">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 4 8 8-8 8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
     </div>
   </div>
 
   {secondary.length > 0 && (
     <div class="rail__row rail__row--extra">
-      <div class="rail__scroll">
-        {secondary.map((c) => (
-          <button class="pill" type="button" data-target={c.id}>{c.label}</button>
-        ))}
+      <div class="rail__viewport">
+        <button class="rail__arrow rail__arrow--left" type="button" aria-label="Scroll categories left" data-scroll-dir="-1">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4 7 12l8 8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="rail__scroll">
+          {secondary.map((c) => (
+            <button class="pill" type="button" data-target={c.id}>{c.label}</button>
+          ))}
+        </div>
+        <button class="rail__arrow rail__arrow--right" type="button" aria-label="Scroll categories right" data-scroll-dir="1">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 4 8 8-8 8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
       </div>
     </div>
   )}
@@ -48,14 +60,46 @@ if (offers?.items?.length) {
     border-top: 1px dashed var(--rule);
   }
 
+  .rail__viewport {
+    position: relative;
+    width: 100%; max-width: var(--wrap);
+    min-width: 0;
+    margin-inline: auto;
+  }
+
   .rail__scroll {
     display: flex; gap: 8px;
-    width: 100%; max-width: var(--wrap);
-    margin-inline: auto; padding: 0 20px;
+    width: 100%;
+    padding: 0 20px;
     overflow-x: auto;
     scrollbar-width: none;
   }
   .rail__scroll::-webkit-scrollbar { display: none; }
+
+  /* scroll-hint arrows for the category rail — independent of any other
+     carousel's arrows in the app; hidden (disabled) whenever the row
+     doesn't overflow, or is already scrolled to that edge */
+  .rail__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    display: grid; place-items: center;
+    width: 28px; height: 28px;
+    padding: 0;
+    border: 2px solid var(--grey);
+    border-radius: 50%;
+    background: var(--paper);
+    color: var(--grey);
+    cursor: pointer;
+    opacity: 0.45;
+    transition: opacity .18s ease, background-color .18s ease, color .18s ease, border-color .18s ease;
+  }
+  .rail__arrow svg { width: 13px; height: 13px; }
+  .rail__arrow:hover { background: var(--green); border-color: var(--green); color: var(--paper); }
+  .rail__arrow:disabled { opacity: 0; pointer-events: none; }
+  .rail__arrow--left { left: 2px; }
+  .rail__arrow--right { right: 2px; }
 
   .pill {
     flex: none;
@@ -147,5 +191,34 @@ if (offers?.items?.length) {
       sections.forEach((s) => observer.observe(s));
       pills[0]?.setAttribute('aria-current', 'true');
     }
+
+    /* Scroll-hint arrows: independent per-row, no relation to any other
+       carousel's arrows. Disabling (rather than hiding) both fades them
+       out via CSS and drops them from the tab order / click target. */
+    const viewports = [...rail.querySelectorAll('.rail__viewport')];
+
+    viewports.forEach((viewport) => {
+      const scroller = viewport.querySelector('.rail__scroll');
+      const leftBtn = viewport.querySelector('.rail__arrow--left');
+      const rightBtn = viewport.querySelector('.rail__arrow--right');
+      if (!scroller || !leftBtn || !rightBtn) return;
+
+      const updateArrows = () => {
+        const max = scroller.scrollWidth - scroller.clientWidth;
+        leftBtn.disabled = scroller.scrollLeft <= 1;
+        rightBtn.disabled = scroller.scrollLeft >= max - 1;
+      };
+
+      const nudgeBy = (dir) => {
+        scroller.scrollBy({ left: dir * Math.round(scroller.clientWidth * 0.9), behavior: 'smooth' });
+      };
+
+      leftBtn.addEventListener('click', () => nudgeBy(-1));
+      rightBtn.addEventListener('click', () => nudgeBy(1));
+
+      scroller.addEventListener('scroll', updateArrows, { passive: true });
+      window.addEventListener('resize', updateArrows);
+      updateArrows();
+    });
   }
 </script>

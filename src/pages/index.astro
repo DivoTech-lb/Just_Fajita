@@ -9,8 +9,17 @@ import Footer from '../components/Footer.astro';
 import { LOGO } from '../assets.js';
 import '../styles/global.css';
 
-const { promotion, brand, menu, offers, business_info } = business;
+const { promotion, brand, menu, business_info } = business;
 const currency = brand.currency_label || 'L.L.';
+
+/* Single pass over menu.categories, split by type. Normal categories share one
+   grid container (for consistent spacing); special categories render full-bleed
+   outside it, same as the offers section always has. */
+const normalCategories = [];
+const specialCategories = [];
+for (const category of menu.categories) {
+  (category.type === 'special' ? specialCategories : normalCategories).push(category);
+}
 ---
 
 <!doctype html>
@@ -33,16 +42,18 @@ const currency = brand.currency_label || 'L.L.';
 
   <TopBar promotion={promotion} whatsapp={business_info.whatsapp} />
   <Hero brand={brand} />
-  <CategoryNav categories={menu.categories} offers={offers} />
+  <CategoryNav categories={menu.categories} />
 
   <main>
     <div id="menu" class="wrap menu">
-      {menu.categories.map((category) => (
+      {normalCategories.map((category) => (
         <MenuSection category={category} currency={currency} />
       ))}
     </div>
 
-    <Offers offers={offers} currency={currency} />
+    {specialCategories.map((category) => (
+      <Offers category={category} currency={currency} />
+    ))}
   </main>
 
   <Footer info={business_info} brand={brand} />
