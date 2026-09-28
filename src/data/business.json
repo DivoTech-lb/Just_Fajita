@@ -77,6 +77,14 @@
             "description_ar": "موزاريلا وشيدر",
             "price_lbp": 600000,
             "photo": ""
+          },
+          {
+            "name_en": "Grape Leaves",
+            "name_ar": "ورق عنب",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 550000,
+            "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/80936b67-47fb-40bc-88fc-a86ef78b71ca-photo_2026-09-28_19-40-49.jpg"
           }
         ]
       },
@@ -109,6 +117,14 @@
             "description_ar": "خس آيسبرغ - خيار - طماطم - ذرة - جزر مبشور",
             "price_lbp": 400000,
             "photo": ""
+          },
+          {
+            "name_en": "Fattoush",
+            "name_ar": "فتوش",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 450000,
+            "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/f773039a-8acb-4e1a-b14d-e5c37edcb235-photo_2026-09-28_19-37-57.jpg"
           }
         ]
       },
