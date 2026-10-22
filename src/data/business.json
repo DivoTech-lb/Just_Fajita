@@ -125,6 +125,14 @@
             "description_ar": "",
             "price_lbp": 450000,
             "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/f773039a-8acb-4e1a-b14d-e5c37edcb235-photo_2026-09-28_19-37-57.jpg"
+          },
+          {
+            "name_en": "Crab salad ",
+            "name_ar": "كراب سالاد",
+            "description_en": "Crab , Iceberg , tomato , corn , carrot ",
+            "description_ar": "كراب ، آيس برغ ، بندورة كرزية  ، ذرة ، جزر مبروش ",
+            "price_lbp": 500000,
+            "photo": ""
           }
         ]
       },
