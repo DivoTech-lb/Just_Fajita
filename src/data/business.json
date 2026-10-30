@@ -192,6 +192,14 @@
             "photo": ""
           },
           {
+            "name_en": "Crab sandwish",
+            "name_ar": "كراب ",
+            "description_en": "Crab , mayonaise,  Cocktail,  Iceberg,  pickles , sweet corn ",
+            "description_ar": "كراب ، مايونيز ، كوكتيل ، خس ، كبيس ، ذرة ",
+            "price_lbp": 450000,
+            "photo": ""
+          },
+          {
             "name_en": "Habash & Cheese",
             "name_ar": "حبش مدخن وجبنة",
             "description_en": "Mayonnaise - Pickles - Tomato - Mustard - Sweet corn - Iceberg",
@@ -205,14 +213,6 @@
             "description_en": "Garlic sauce - Coleslaw - Pickles - Ketchup",
             "description_ar": "صوص ثوم - كولسلو - كبيس - كاتشب",
             "price_lbp": 250000,
-            "photo": ""
-          },
-          {
-            "name_en": "Crab sandwish",
-            "name_ar": "كراب ",
-            "description_en": "Crab , mayonaise,  Cocktail,  Iceberg,  pickles , sweet corn ",
-            "description_ar": "كراب ، مايونيز ، كوكتيل ، خس ، كبيس ، ذرة ",
-            "price_lbp": 450000,
             "photo": ""
           }
         ]
@@ -250,40 +250,40 @@
           {
             "name_en": "Lebanese Burger",
             "name_ar": "برغر لبناني",
-            "description_en": "",
-            "description_ar": "",
+            "description_en": "Beef , Cocktail,  ktchp,  Coleslaw, potato ",
+            "description_ar": "لحمة ، كوكتيل ، كاتشاب ، سلطة ملفوف ، بطاطا ",
             "price_lbp": 580000,
             "photo": ""
           },
           {
             "name_en": "Cheese Burger",
             "name_ar": "تشيز برغر",
-            "description_en": "",
-            "description_ar": "",
+            "description_en": "Beef , Cocktail,  ktchp,  Coleslaw, potato , cheader ",
+            "description_ar": "لحمة ، كوكتيل ، كاتشاب ، سلطة ملفوف ، بطاطا , تشدر ",
             "price_lbp": 630000,
             "photo": ""
           },
           {
             "name_en": "American",
             "name_ar": "أميريكان",
-            "description_en": "",
-            "description_ar": "",
+            "description_en": "Beef , mayonaise , mustard, ،BBQ cheader , tomato , onion ",
+            "description_ar": "لحمة ، مايونيز ، خردل ، باربكيو ، تشدر ، بندورة ، بصل ",
             "price_lbp": 630000,
             "photo": ""
           },
           {
             "name_en": "Mozzarella Chicken",
             "name_ar": "موزاريلا دجاج",
-            "description_en": "",
-            "description_ar": "",
+            "description_en": "Breast , garlic , mozarella panne,  Iceberg,  tomato , Cocktail, pickles ",
+            "description_ar": "صدر ، ثوم ، موزوريلا بانيه ، خس  ،بندورة ، كوكتيل ، كبيس ",
             "price_lbp": 720000,
             "photo": ""
           },
           {
             "name_en": "Mozzarella Beef",
             "name_ar": "موزاريلا لحمة",
-            "description_en": "",
-            "description_ar": "",
+            "description_en": "Beef , mozarella panne , Cocktail,  mayonaise , tomato , iceberg",
+            "description_ar": "لحمة ، مووريلا بانيه ، كوكتيل ، مايونيز ، بندورة ، خس ",
             "price_lbp": 770000,
             "photo": ""
           },
