@@ -401,19 +401,19 @@
             "photo": ""
           },
           {
-            "name_en": "Chicken Breaded",
-            "name_ar": "دجاج مقرمش",
-            "description_en": "",
-            "description_ar": "",
-            "price_lbp": 610000,
-            "photo": ""
-          },
-          {
             "name_en": "Escalop Burger",
             "name_ar": "برغر اسكالوب",
             "description_en": "",
             "description_ar": "",
             "price_lbp": 550000,
+            "photo": ""
+          },
+          {
+            "name_en": "Chicken Breaded",
+            "name_ar": "دجاج مقرمش",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 610000,
             "photo": ""
           },
           {
