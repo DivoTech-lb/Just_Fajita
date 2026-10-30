@@ -421,7 +421,7 @@
             "name_ar": "برغر دجاج",
             "description_en": "",
             "description_ar": "",
-            "price_lbp": 590000,
+            "price_lbp": 500000,
             "photo": ""
           },
           {
@@ -443,86 +443,6 @@
         ],
         "note_en": "",
         "note_ar": ""
-      },
-      {
-        "id": "plate",
-        "category_en": "Plate",
-        "category_ar": "صحون",
-        "type": "normal",
-        "items": [
-          {
-            "name_en": "Crispy 3 pcs",
-            "name_ar": "وجبة كرسبي ٣ قطع",
-            "description_en": "Fries - 1 Coleslaw - 1 Cocktail sauce - 1 Garlic sauce - Pickles",
-            "description_ar": "بطاطا مقلية - ١ كولسلو - ١ صوص كوكتيل - ١ صوص ثوم - كبيس",
-            "price_lbp": 700000,
-            "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/0f259429-c85e-4ae9-b8ad-e1ad45fc107a-IMG_9502.jpeg"
-          },
-          {
-            "name_en": "Crispy 5 pcs",
-            "name_ar": "وجبة كرسبي ٥ قطع",
-            "description_en": "Fries - 1 Coleslaw - 1 Cocktail sauce - 2 Garlic sauce - Pickles",
-            "description_ar": "بطاطا مقلية - ١ كولسلو - ١ صوص كوكتيل - ٢ صوص ثوم - كبيس",
-            "price_lbp": 900000,
-            "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/18f439ab-e1ee-4591-b0d2-06deda6df09c-IMG_9503.jpeg"
-          },
-          {
-            "name_en": "Crispy 10 pcs",
-            "name_ar": "وجبة كرسبي ١٠ قطع",
-            "description_en": "Fries - 2 Coleslaw - 2 Cocktail sauce - 4 Garlic sauce - Pickles",
-            "description_ar": "بطاطا مقلية - ٢ كولسلو - ٢ صوص كوكتيل - ٤ صوص ثوم - كبيس",
-            "price_lbp": 1750000,
-            "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/71db12e6-14e4-4ba3-826e-338f379b20df-IMG_9505.jpeg"
-          },
-          {
-            "name_en": "Escalope",
-            "name_ar": "اسكالوب",
-            "description_en": "2 pieces escalope - Fries - Coleslaw - Cocktail sauce - Garlic sauce - Pickles",
-            "description_ar": "قطعتان إسكالوب - بطاطا مقلية - كولسلو - صوص كوكتيل - صوص ثوم - كبيس",
-            "price_lbp": 900000,
-            "photo": ""
-          },
-          {
-            "name_en": "Escalopini",
-            "name_ar": "اسكالوبيني",
-            "description_en": "2 pieces escalope with mixed cheese (cheddar & mozzarella) - Wedges - Small Caesar salad - Honey mustard sauce",
-            "description_ar": "قطعتان إسكالوب مع مزيج جبنة (شيدر وموزاريلا) - ودجز - سلطة سيزر صغيرة - صوص خردل بالعسل",
-            "price_lbp": 1090000,
-            "photo": ""
-          },
-          {
-            "name_en": "Mix Plate",
-            "name_ar": "صحن مشكل",
-            "description_en": "1 chicken breast - 1 crispy chicken - 1 escalope - Fries - Coleslaw - Cocktail sauce - Pickles",
-            "description_ar": "صدر دجاج قطعة - دجاج مقرمش قطعة - إسكالوب قطعة - بطاطا مقلية - كولسلو - صوص كوكتيل - كبيس",
-            "price_lbp": 950000,
-            "photo": ""
-          },
-          {
-            "name_en": "Tawook",
-            "name_ar": "طاووق",
-            "description_en": "Tawook - Fries - Coleslaw - Cocktail sauce - Garlic sauce - Pickles",
-            "description_ar": "طاووق - بطاطا مقلية - كولسلو - صوص كوكتيل - صوص ثوم - كبيس",
-            "price_lbp": 950000,
-            "photo": ""
-          },
-          {
-            "name_en": "Original Chicken",
-            "name_ar": "صحن دجاج",
-            "description_en": "2 pieces chicken breast - Fries - Small green salad - Garlic sauce - Pickles",
-            "description_ar": "قطعتان صدر دجاج - بطاطا مقلية - سلطة خضراء صغيرة - صوص ثوم - كبيس",
-            "price_lbp": 910000,
-            "photo": ""
-          },
-          {
-            "name_en": "Nuggets 8 pcs",
-            "name_ar": "ناغتس ٨ قطع",
-            "description_en": "8 pcs nuggets - Fries - 1 Garlic sauce - 2 Cocktail sauce - 1 Coleslaw",
-            "description_ar": "٨ حبات ناغتس - بطاطا مقلية - ١ صوص ثوم - ٢ صوص كوكتيل - ١ كولسلو",
-            "price_lbp": 700000,
-            "photo": ""
-          }
-        ]
       },
       {
         "id": "crepe",
@@ -626,6 +546,86 @@
             "description_en": "",
             "description_ar": "",
             "price_lbp": 350000,
+            "photo": ""
+          }
+        ]
+      },
+      {
+        "id": "plate",
+        "category_en": "Plate",
+        "category_ar": "صحون",
+        "type": "normal",
+        "items": [
+          {
+            "name_en": "Crispy 3 pcs",
+            "name_ar": "وجبة كرسبي ٣ قطع",
+            "description_en": "Fries - 1 Coleslaw - 1 Cocktail sauce - 1 Garlic sauce - Pickles",
+            "description_ar": "بطاطا مقلية - ١ كولسلو - ١ صوص كوكتيل - ١ صوص ثوم - كبيس",
+            "price_lbp": 700000,
+            "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/0f259429-c85e-4ae9-b8ad-e1ad45fc107a-IMG_9502.jpeg"
+          },
+          {
+            "name_en": "Crispy 5 pcs",
+            "name_ar": "وجبة كرسبي ٥ قطع",
+            "description_en": "Fries - 1 Coleslaw - 1 Cocktail sauce - 2 Garlic sauce - Pickles",
+            "description_ar": "بطاطا مقلية - ١ كولسلو - ١ صوص كوكتيل - ٢ صوص ثوم - كبيس",
+            "price_lbp": 900000,
+            "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/18f439ab-e1ee-4591-b0d2-06deda6df09c-IMG_9503.jpeg"
+          },
+          {
+            "name_en": "Crispy 10 pcs",
+            "name_ar": "وجبة كرسبي ١٠ قطع",
+            "description_en": "Fries - 2 Coleslaw - 2 Cocktail sauce - 4 Garlic sauce - Pickles",
+            "description_ar": "بطاطا مقلية - ٢ كولسلو - ٢ صوص كوكتيل - ٤ صوص ثوم - كبيس",
+            "price_lbp": 1750000,
+            "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/71db12e6-14e4-4ba3-826e-338f379b20df-IMG_9505.jpeg"
+          },
+          {
+            "name_en": "Escalope",
+            "name_ar": "اسكالوب",
+            "description_en": "2 pieces escalope - Fries - Coleslaw - Cocktail sauce - Garlic sauce - Pickles",
+            "description_ar": "قطعتان إسكالوب - بطاطا مقلية - كولسلو - صوص كوكتيل - صوص ثوم - كبيس",
+            "price_lbp": 900000,
+            "photo": ""
+          },
+          {
+            "name_en": "Escalopini",
+            "name_ar": "اسكالوبيني",
+            "description_en": "2 pieces escalope with mixed cheese (cheddar & mozzarella) - Wedges - Small Caesar salad - Honey mustard sauce",
+            "description_ar": "قطعتان إسكالوب مع مزيج جبنة (شيدر وموزاريلا) - ودجز - سلطة سيزر صغيرة - صوص خردل بالعسل",
+            "price_lbp": 1090000,
+            "photo": ""
+          },
+          {
+            "name_en": "Mix Plate",
+            "name_ar": "صحن مشكل",
+            "description_en": "1 chicken breast - 1 crispy chicken - 1 escalope - Fries - Coleslaw - Cocktail sauce - Pickles",
+            "description_ar": "صدر دجاج قطعة - دجاج مقرمش قطعة - إسكالوب قطعة - بطاطا مقلية - كولسلو - صوص كوكتيل - كبيس",
+            "price_lbp": 950000,
+            "photo": ""
+          },
+          {
+            "name_en": "Tawook",
+            "name_ar": "طاووق",
+            "description_en": "Tawook - Fries - Coleslaw - Cocktail sauce - Garlic sauce - Pickles",
+            "description_ar": "طاووق - بطاطا مقلية - كولسلو - صوص كوكتيل - صوص ثوم - كبيس",
+            "price_lbp": 950000,
+            "photo": ""
+          },
+          {
+            "name_en": "Original Chicken",
+            "name_ar": "صحن دجاج",
+            "description_en": "2 pieces chicken breast - Fries - Small green salad - Garlic sauce - Pickles",
+            "description_ar": "قطعتان صدر دجاج - بطاطا مقلية - سلطة خضراء صغيرة - صوص ثوم - كبيس",
+            "price_lbp": 910000,
+            "photo": ""
+          },
+          {
+            "name_en": "Nuggets 8 pcs",
+            "name_ar": "ناغتس ٨ قطع",
+            "description_en": "8 pcs nuggets - Fries - 1 Garlic sauce - 2 Cocktail sauce - 1 Coleslaw",
+            "description_ar": "٨ حبات ناغتس - بطاطا مقلية - ١ صوص ثوم - ٢ صوص كوكتيل - ١ كولسلو",
+            "price_lbp": 700000,
             "photo": ""
           }
         ]
