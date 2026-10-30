@@ -724,11 +724,6 @@
         "hours": "12:00pm-1:00am"
       },
       {
-        "day_en": "Friday",
-        "day_ar": "الجمعة",
-        "hours": "12:00pm-1:00am"
-      },
-      {
         "day_en": "Saturday",
         "day_ar": "السبت",
         "hours": "12:00pm-1:00am"
@@ -736,6 +731,11 @@
       {
         "day_en": "Sunday",
         "day_ar": "الأحد",
+        "hours": "12:00pm-1:00am"
+      },
+      {
+        "day_en": "Friday",
+        "day_ar": "الجمعة",
         "hours": "12:00pm-1:00am"
       }
     ],
