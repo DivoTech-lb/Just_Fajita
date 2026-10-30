@@ -417,10 +417,10 @@
             "photo": ""
           },
           {
-            "name_en": "Escalop Burger",
-            "name_ar": "برغر اسكالوب",
-            "description_en": "",
-            "description_ar": "",
+            "name_en": "Chicken cheese burger ",
+            "name_ar": "تشيكن تشيز برغر",
+            "description_en": "Breast , Coleslaw, cheader ,  garlic , potato , ktchp ,pickles ",
+            "description_ar": "صدر دجاج ، سلطة ملفوف ، تشدر ، ثوم ، بطاطا ، كاتشاب ، كبيس ",
             "price_lbp": 550000,
             "photo": ""
           },
@@ -433,19 +433,19 @@
             "photo": ""
           },
           {
+            "name_en": "Escalop Burger",
+            "name_ar": "برغر اسكالوب",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 550000,
+            "photo": ""
+          },
+          {
             "name_en": "",
             "name_ar": "",
             "description_en": "",
             "description_ar": "",
             "price_lbp": 0,
-            "photo": ""
-          },
-          {
-            "name_en": "Chicken cheese burger ",
-            "name_ar": "تشيكن تشيز برغر",
-            "description_en": "Breast , Coleslaw, cheader ,  garlic , potato , ktchp ,pickles ",
-            "description_ar": "صدر دجاج ، سلطة ملفوف ، تشدر ، ثوم ، بطاطا ، كاتشاب ، كبيس ",
-            "price_lbp": 550000,
             "photo": ""
           }
         ],
