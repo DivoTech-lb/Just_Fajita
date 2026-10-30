@@ -423,6 +423,22 @@
             "description_ar": "",
             "price_lbp": 590000,
             "photo": ""
+          },
+          {
+            "name_en": "BBQ burger",
+            "name_ar": "باربكيو برغر ",
+            "description_en": "Beef , turkey , onion rings , cheader, tomato , Iceberg ",
+            "description_ar": "لحمة ، حبش مدخن ، حلقات البصل ، تشدر ، بندورة ، خس ",
+            "price_lbp": 750000,
+            "photo": ""
+          },
+          {
+            "name_en": "",
+            "name_ar": "",
+            "description_en": "",
+            "description_ar": "",
+            "price_lbp": 0,
+            "photo": ""
           }
         ],
         "note_en": "",
