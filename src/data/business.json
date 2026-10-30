@@ -342,6 +342,22 @@
             "description_ar": "",
             "price_lbp": 0,
             "photo": ""
+          },
+          {
+            "name_en": "Chicken melt ",
+            "name_ar": " تشيكن ملت ",
+            "description_en": " Breast . Turkey , cheader , BBQ,  garlic , pickles, Iceberg,  tomato ",
+            "description_ar": "صدر ، حبش مدخن ، تشدر ، باربكيو ، ثوم ، كبيس ، خس ، بندورة ",
+            "price_lbp": 680000,
+            "photo": ""
+          },
+          {
+            "name_en": "Honey mustard burger ",
+            "name_ar": "برغر خردل و عسل ",
+            "description_en": "Breast , chips , honeymustard , corn , Iceberg ",
+            "description_ar": "صدر ، تشيبس صوص خردل و عسل ، ذرة ، خس ",
+            "price_lbp": 540000,
+            "photo": ""
           }
         ],
         "note_en": "",
