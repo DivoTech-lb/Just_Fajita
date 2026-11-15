@@ -85,6 +85,14 @@
             "description_ar": "",
             "price_lbp": 550000,
             "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/80936b67-47fb-40bc-88fc-a86ef78b71ca-photo_2026-09-28_19-40-49.jpg"
+          },
+          {
+            "name_en": "Wings (10 pieces) ",
+            "name_ar": "جوانح  (١٠ قطع)",
+            "description_en": "10 Wings,  fries,  sauce ",
+            "description_ar": "١٠ جوانح ، بطاطا ، صوص ",
+            "price_lbp": 700000,
+            "photo": ""
           }
         ]
       },
@@ -184,14 +192,6 @@
             "photo": ""
           },
           {
-            "name_en": "Crust Chicken",
-            "name_ar": "كرست تشيكن",
-            "description_en": "Chicken breast - Sweet corn - Lettuce - Mozzarella - Caesar sauce - Chips",
-            "description_ar": "صدر دجاج - ذرة حلوة - خس - موزاريلا - صوص سيزر - شيبس",
-            "price_lbp": 520000,
-            "photo": ""
-          },
-          {
             "name_en": "Crab sandwish",
             "name_ar": "كراب ",
             "description_en": "Crab , mayonaise,  Cocktail,  Iceberg,  pickles , sweet corn ",
@@ -216,11 +216,11 @@
             "photo": ""
           },
           {
-            "name_en": "Sandwish wings bbq",
-            "name_ar": "ساندويش جوانح باربكيو ",
-            "description_en": "5 wings , mayo , BBQ,  fries,  pickles ",
-            "description_ar": "٥ جوانح ، مايونيز ، باربكيو ، بطاطا ، كبيس ",
-            "price_lbp": 400000,
+            "name_en": "Crust Chicken",
+            "name_ar": "كرست تشيكن",
+            "description_en": "Chicken breast - Sweet corn - Lettuce - Mozzarella - Caesar sauce - Chips",
+            "description_ar": "صدر دجاج - ذرة حلوة - خس - موزاريلا - صوص سيزر - شيبس",
+            "price_lbp": 520000,
             "photo": ""
           },
           {
@@ -236,6 +236,14 @@
             "name_ar": "ساندويش جوانح حر ",
             "description_en": "5 wings , mayo , buffalo,  fries , pickles ",
             "description_ar": "٥ جوانح ، مايونيز ، صوص حر ، بطاطا ، كبيس ",
+            "price_lbp": 400000,
+            "photo": ""
+          },
+          {
+            "name_en": "Sandwish wings bbq",
+            "name_ar": "ساندويش جوانح باربكيو ",
+            "description_en": "5 wings , mayo , BBQ,  fries,  pickles ",
+            "description_ar": "٥ جوانح ، مايونيز ، باربكيو ، بطاطا ، كبيس ",
             "price_lbp": 400000,
             "photo": ""
           },
