@@ -136,22 +136,6 @@
             "spicy": true
           },
           {
-            "name_en": "Francisco",
-            "name_ar": "فرانسيسكو",
-            "description_en": "Mayonnaise - Soy sauce - Mozzarella cheese - Sweet corn - Lettuce - Pickles",
-            "description_ar": "مايونيز - صوص صويا - جبنة موزاريلا - ذرة حلوة - خس - كبيس",
-            "price_lbp": 450000,
-            "photo": ""
-          },
-          {
-            "name_en": "Escalop",
-            "name_ar": "اسكالوب",
-            "description_en": "Garlic sauce - Coleslaw - Pickles - Potato - Ketchup",
-            "description_ar": "صوص ثوم - كولسلو - كبيس - بطاطا - كاتشب",
-            "price_lbp": 500000,
-            "photo": ""
-          },
-          {
             "name_en": "Tawook",
             "name_ar": "طاووق",
             "description_en": "Garlic sauce - Coleslaw - Pickles - Potato",
@@ -165,6 +149,22 @@
             "description_en": "Garlic sauce - Coleslaw - Pickles - Potato - Ketchup",
             "description_ar": "صوص ثوم - كولسلو - كبيس - بطاطا - كاتشب",
             "price_lbp": 430000,
+            "photo": ""
+          },
+          {
+            "name_en": "Francisco",
+            "name_ar": "فرانسيسكو",
+            "description_en": "Mayonnaise - Soy sauce - Mozzarella cheese - Sweet corn - Lettuce - Pickles",
+            "description_ar": "مايونيز - صوص صويا - جبنة موزاريلا - ذرة حلوة - خس - كبيس",
+            "price_lbp": 450000,
+            "photo": ""
+          },
+          {
+            "name_en": "Escalop",
+            "name_ar": "اسكالوب",
+            "description_en": "Garlic sauce - Coleslaw - Pickles - Potato - Ketchup",
+            "description_ar": "صوص ثوم - كولسلو - كبيس - بطاطا - كاتشب",
+            "price_lbp": 500000,
             "photo": ""
           },
           {
@@ -213,6 +213,14 @@
             "description_en": "Garlic sauce - Coleslaw - Pickles - Ketchup",
             "description_ar": "صوص ثوم - كولسلو - كبيس - كاتشب",
             "price_lbp": 250000,
+            "photo": ""
+          },
+          {
+            "name_en": "Sandwish wings bbq",
+            "name_ar": "ساندويش جوانح باربكيو ",
+            "description_en": "5 wings , mayo , BBQ,  fries,  pickles ",
+            "description_ar": "٥ جوانح ، مايونيز ، باربكيو ، بطاطا ، كبيس ",
+            "price_lbp": 400000,
             "photo": ""
           }
         ]
