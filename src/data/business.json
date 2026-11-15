@@ -15,6 +15,14 @@
         "type": "normal",
         "items": [
           {
+            "name_en": "Wings (10 pieces) ",
+            "name_ar": "جوانح  (١٠ قطع)",
+            "description_en": "10 Wings,  fries,  sauce ",
+            "description_ar": "١٠ جوانح ، بطاطا ، صوص ",
+            "price_lbp": 700000,
+            "photo": ""
+          },
+          {
             "name_en": "Fries Small",
             "name_ar": "بطاطا صغيرة",
             "description_en": "",
@@ -85,14 +93,6 @@
             "description_ar": "",
             "price_lbp": 550000,
             "photo": "https://sfnvevtnofjnrofysshz.supabase.co/storage/v1/object/public/business-images/just-fajita/80936b67-47fb-40bc-88fc-a86ef78b71ca-photo_2026-09-28_19-40-49.jpg"
-          },
-          {
-            "name_en": "Wings (10 pieces) ",
-            "name_ar": "جوانح  (١٠ قطع)",
-            "description_en": "10 Wings,  fries,  sauce ",
-            "description_ar": "١٠ جوانح ، بطاطا ، صوص ",
-            "price_lbp": 700000,
-            "photo": ""
           }
         ]
       },
