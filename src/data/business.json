@@ -238,6 +238,14 @@
             "description_ar": "٥ جوانح ، مايونيز ، صوص حر ، بطاطا ، كبيس ",
             "price_lbp": 400000,
             "photo": ""
+          },
+          {
+            "name_en": "Sandwish garlic wings",
+            "name_ar": "ساندويش جوانح مع ثوم ",
+            "description_en": "5 wings , garlic,  fries , pickles ",
+            "description_ar": "٥ جوانح ، ثوم ، بطاطا ، كبيس ",
+            "price_lbp": 0,
+            "photo": ""
           }
         ]
       },
