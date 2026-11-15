@@ -222,6 +222,14 @@
             "description_ar": "٥ جوانح ، مايونيز ، باربكيو ، بطاطا ، كبيس ",
             "price_lbp": 400000,
             "photo": ""
+          },
+          {
+            "name_en": "Sandwish wings honey mustard ",
+            "name_ar": "ساندويش جوانح مع عسل و خردل ",
+            "description_en": "5 wings , mayo , honeymustard , fries , pickles ",
+            "description_ar": "٥ جوانح ، مايونيز ، خردل و عسل ، بطاطا ، كبيش ",
+            "price_lbp": 400000,
+            "photo": ""
           }
         ]
       },
